@@ -75,6 +75,6 @@ button{
     color: #FFFFFF;
     /* background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da); */
     background-color: #FF79DA;
-    box-shadow: inset -25px -25px 50px #9356DC;
+    box-shadow: inset -15px -15px 50px #9356DC;
     font-weight: 500;
 }

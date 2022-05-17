@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
 *{ 
-    font-family: 'Raleway', 'Shrikhand', Verdana, Tahoma, sans-serif;
+    font-family: 'Roboto', 'Shrikhand', Verdana, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 body {
     width: 100%;
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    font-family: "Roboto";
+}
+header{
+    width: 100%;
+    justify-content: center;
+}
+.logo{
+    width: 44.25%;
+    height: min-content;
+    margin: 22px 0 12px 0;
 }

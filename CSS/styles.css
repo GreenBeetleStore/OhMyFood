@@ -24,7 +24,6 @@ header{
 }
 main{
     width: 100%;
-
 }
 .maps{
     width: 100%;
@@ -73,8 +72,7 @@ button{
     border: none;
     border-radius: 25px;
     color: #FFFFFF;
-    /* background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da); */
-    background-color: #FF79DA;
-    box-shadow: inset -15px -15px 50px #9356DC;
+    background: linear-gradient(-5deg, #9356DC, #FF79DA);
+    box-shadow: 5px 5px 5px #d4d4d4;
     font-weight: 500;
 }

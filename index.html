@@ -36,78 +36,94 @@
                 <span>
                     <i class="fa-solid fa-location-dot"></i>
                 </span>
-                <span class="maps_btn">
+                <span class="maps__btn">
                     <input type="search" name="city" value="Paris, Belleville" placeholder="Votre ville ici">
                 </span>
             </div>
             <div class="intro">
                 <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <button class="btn btn-rounded btn-gradient"> Explorer nos restaurants </button>
             </div>
-            <section class="how_to">
+            <section class="operative">
                 <h2 class="headers">Fonctionnement</h2>
-                <article class="how_to_art">
-                    <div class="how_to_card">1</div>
-                    <div>
+                <article class="howto">
+                    <div class="howto__step--sort">1</div>
+                    <div class="howto__step__byline">
                         <i class="fa-solid fa-mobile-screen-button how_work_card_icon"></i>
                         <p>Choisissez un restaurant</p>
                     </div>
                 </article>
-                <article class="how_to_art">
-                    <div class="how_to_card">2</div>
-                    <div>
+                <article class="howto">
+                    <div class="howto__step--sort">2</div>
+                    <div class="howto__step__byline">
                         <i class="fa-solid fa-list-ul how_work_card_icon"></i>
                         <p>Composez votre menu</p>
                     </div>
                 </article>
-                <article class="how_to_art how_to_art-color">
-                    <div class="how_to_card">3</div>
-                    <div>
+                <article class="howto--background">
+                    <div class="howto__step--sort">3</div>
+                    <div class="howto__step__byline">
                         <i class="fa-solid fa-store how_work_card_icon"></i>
-                        <p>Composez votre menu</p>
+                        <p>Dégustez au restaurant</p>
                     </div>
                 </article>
             </section>
              <section class="restaurants">
                  <h2 class="headers">Restaurants</h2>
-                <article>
+                <article class="card">
                     <a href="La_palette_du_goût.html">
                         <img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'un plat du restaurant La palette du goût" title="Restaurant La palette du goût">
-                        <div class="name_location">
-                            <h3 class="names">La palette du goût</h3>
-                            <p class="locations">Ménilmontant</p>
+                        <div class="card__byline">
+                            <div class="card__byline__name">
+                                <h3>La palette du goût</h3>
+                            </div>
+                            <div class="card__byline__location"
+                                <p>Ménilmontant</p>
+                            </div>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </a>
                 </article>
-                <article>
+                <article class="card">
                     <a href="La_note_enchantée.html">
                         <img src="images/stil-u2Lp8tXIcjw-unsplash-cropped.jpg" alt="Photo d'un plat du restaurant La note enchantée" title="Restaurant La note enchantée">
-                        <div class="name_location">
-                            <h3 class="names">La note enchantée</h3>
-                            <p class="locations">Charonne</p>
+                        <div class="card__byline">
+                            <div class="card__byline__name">
+                                <h3>La note enchantée</h3>
+                            </div>
+                            <div class="card__byline__location"
+                                <p>Charonne</p>
+                            </div>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </a>
                 </article>
                 <!-- <i class="fa-solid fa-heart"></i> -->
-                <article>
+                <article class="card">
                     <a href="À la française.html">
                         <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo d'un plat du restaurant À la française" title="Restaurant À la française">
-                        <div class="name_location">
-                            <h3 class="names">À la française</h3>
-                            <p class="locations">Cité Rouge</p>
+                        <div class="card__byline">
+                            <div class="card__byline__name">
+                                <h3>À la française</h3>
+                            </div>
+                            <div class="location">
+                                <p>Cité Rouge</p>
+                            </div>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </a>
                 </article>
-                <article>
+                <article class="card">
                     <a href="Le_délice_des_sens.html">
                         <img src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo d'un plat du restaurant La délice des sens" title="Restaurant La délice des sens">
-                        <div class="name_location">
-                            <h3 class="names">La délice des sens</h3>
-                            <p class="locations">Folie-Méricourt</p>
+                        <div class="card__byline">
+                            <div class="card__byline__name">
+                                <h3 class="names">La délice des sens</h3>
+                            </div>
+                            <div class="card__byline__location"
+                                <p>Folie-Méricourt</p>
+                            </div>
                         </div>
                         <i class="fa-regular fa-heart"></i>
                     </a>
@@ -115,8 +131,8 @@
              </section>
         </main>
         <footer>
-            <h2>ohmyfood</h2>
-            <ul>
+            <h2 class="wordmark">ohmyfood</h2>
+            <ul class="feedback">
                 <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
                 <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a></li>
                 <li><a href="#">Mentions légales</a></li>

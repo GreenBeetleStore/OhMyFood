@@ -1,0 +1,21 @@
+Dans le terminal, tapez “npm run sass” :
+
+npm run sass
+
+C’est exactement comme la fois où vous avez initialisé le fichier package : 
+npm indique à la ligne de commande que vous voulez exécuter une commande npm.
+La commande, c’est run. 
+Et sass, c’est le nom du script que vous voulez exécuter.
+
+
+En résumé
+package.json contient les informations de votre projet.
+
+La commande  "npm init"  initialise un fichier package.json.
+
+La commande  "npm install sass -g"  installe Sass sur votre machine et pas seulement votre projet.
+
+"scripts"  contient la liste des commandes que vous pouvez exécuter en lançant  "npm + le nom du script"  .
+
+Le "flag --style" permet de préciser sous quelle forme sera compilé votre CSS. 
+Vous pouvez choisir entre nested, compressed, expanded ou compact.

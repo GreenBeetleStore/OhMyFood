@@ -96,4 +96,43 @@ h1 {
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }
 
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+  padding: 30px 0 40px 40px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 0.65px;
+  color: #FFFFFF;
+  width: 27%;
+  text-align: center;
+}
+
+ul.feedback {
+  list-style: none;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+ul.feedback li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.8;
+  letter-spacing: 0.6px;
+}
+ul.feedback li a i {
+  width: 25px;
+  font-size: 0.8rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

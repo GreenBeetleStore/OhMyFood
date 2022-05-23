@@ -19,7 +19,6 @@
   width: 100%;
   justify-content: center;
 }
-
 .logo img {
   width: 44.25%;
   height: min-content;
@@ -40,11 +39,9 @@
   box-shadow: 0 5px 5px #d4d4d4 inset;
   gap: 18px;
 }
-
 .maps i {
   font-size: 1.1rem;
 }
-
 .maps__btn input {
   width: 140px;
   background-color: #EAEAEA;
@@ -64,6 +61,11 @@
   background-color: #F6F6F6;
   text-align: center;
 }
+.intro p {
+  font-size: 1.1rem;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
 
 h1 {
   width: 77.85%;
@@ -71,12 +73,6 @@ h1 {
   font-weight: 800;
   line-height: 115%;
   margin-bottom: 12px;
-}
-
-.intro p {
-  font-size: 1.1rem;
-  line-height: 120%;
-  margin-bottom: 30px;
 }
 
 .btn {
@@ -87,12 +83,10 @@ h1 {
   font-weight: 500;
   box-shadow: 5px 5px 5px #d4d4d4;
 }
-
-.btn-rounded {
+.btn--rounded {
   border-radius: 25px;
 }
-
-.btn-gradient {
+.btn--gradient {
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }
 

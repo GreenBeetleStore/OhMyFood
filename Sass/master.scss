@@ -16,11 +16,11 @@
 .logo{
     width: 100%;
     justify-content: center;
-}
-.logo img{
-    width: 44.25%;
-    height: min-content;
-    margin: 22px auto 12px auto;
+    img{
+        width: 44.25%;
+        height: min-content;
+        margin: 22px auto 12px auto;
+    }
 }
 .main{
     width: 100%;
@@ -34,16 +34,16 @@
     background-color: #EAEAEA;
     box-shadow: 0 5px 5px #d4d4d4 inset;
     gap: 18px;
-}
-.maps i{
-    font-size: 1.1rem;
-}
-.maps__btn input{
-    width: 140px;
-    background-color: #EAEAEA;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
+    i{
+        font-size: 1.1rem;
+    }
+    &__btn input{
+        width: 140px;
+        background-color: #EAEAEA;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+    }
 }
 .intro{
     display: flex;
@@ -55,6 +55,11 @@
     padding: 40px 0 50px 0;
     background-color: #F6F6F6;
     text-align: center;
+    p{
+        font-size: 1.1rem;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
 }
 h1{
     width: 77.85%;
@@ -63,11 +68,6 @@ h1{
     line-height: 115%;
     margin-bottom: 12px;
 }
-.intro p{
-    font-size: 1.1rem;
-    line-height: 120%;
-    margin-bottom: 30px;
-}
 .btn{
     width: 220px;
     height: 50px;
@@ -75,12 +75,12 @@ h1{
     color: #FFFFFF;
     font-weight: 500;
     box-shadow: 5px 5px 5px #d4d4d4;
-}
-.btn-rounded{
+    &--rounded{
     border-radius: 25px;
-}
-.btn-gradient{
+    }
+    &--gradient{
     background: linear-gradient(-5deg, #9356DC, #FF79DA);
+    }
 }
 
 

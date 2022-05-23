@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+* {
+  font-family: "Roboto", "Shrikhand", Verdana, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+
+.logo {
+  width: 100%;
+  justify-content: center;
+}
+.logo img {
+  width: 44.25%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  margin: 22px auto 12px auto;
+}
+
+.main {
+  width: 100%;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: 0 5px 5px #d4d4d4 inset;
+  gap: 18px;
+}
+.maps i {
+  font-size: 1.1rem;
+}
+.maps__btn input {
+  width: 140px;
+  background-color: #EAEAEA;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 40px 0 50px 0;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+.intro p {
+  font-size: 1.1rem;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+h1 {
+  width: 77.85%;
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 115%;
+  margin-bottom: 12px;
+}
+
+.btn {
+  width: 220px;
+  height: 50px;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px #d4d4d4;
+}
+.btn--rounded {
+  border-radius: 25px;
+}
+.btn--gradient {
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: #353535;
+  padding: 30px 0 40px 40px;
+}
+footer h2 {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  font-weight: lighter;
+  letter-spacing: 0.65px;
+  color: #FFFFFF;
+  width: 27%;
+  text-align: center;
+}
+
+ul.feedback {
+  list-style: none;
+  margin: 0;
+  padding: 15px 0 0 0;
+}
+ul.feedback li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.8;
+  letter-spacing: 0.6px;
+}
+ul.feedback li a i {
+  width: 25px;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=master.css.map */

@@ -3,6 +3,20 @@
     font-family: 'Roboto', 'Shrikhand', Verdana, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+
+$white: #FFFFFF;
+$primarycolor: #9356DC;
+$secondarycolor: #FF79DA;
+$contrastcolor: #99E2D0;
+$shadow: #D4D4D4;
+$groundcolor: #F6F6F6;
+$mapscolor: #EAEAEA;
+$footercolor: #353535;
+
+@mixin box-shadow ($shadow){
+    box-shadow: 5px 5px 5px $shadow;
+}
+
 .body {
     width: 100%;
     display: flex;
@@ -74,7 +88,7 @@ h1{
     border: none;
     color: #FFFFFF;
     font-weight: 500;
-    box-shadow: 5px 5px 5px #d4d4d4;
+    @include box-shadow($shadow);
     &--rounded{
     border-radius: 25px;
     }

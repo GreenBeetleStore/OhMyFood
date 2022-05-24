@@ -36,7 +36,7 @@
   width: 100%;
   height: 50px;
   background-color: #EAEAEA;
-  box-shadow: 0 5px 5px #d4d4d4 inset;
+  box-shadow: 0 5px 5px #D4D4D4 inset;
   gap: 18px;
 }
 .maps i {
@@ -81,7 +81,7 @@ h1 {
   border: none;
   color: #FFFFFF;
   font-weight: 500;
-  box-shadow: 5px 5px 5px #d4d4d4;
+  box-shadow: 5px 5px 5px #D4D4D4;
 }
 .btn--rounded {
   border-radius: 25px;

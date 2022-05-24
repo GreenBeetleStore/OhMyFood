@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-$white: #FFFFFF;
+$basecolor: #FFFFFF;
 $primarycolor: #9356DC;
 $secondarycolor: #FF79DA;
 $contrastcolor: #99E2D0;
@@ -15,6 +15,12 @@ $footercolor: #353535;
 
 @mixin box-shadow ($shadow){
     box-shadow: 5px 5px 5px $shadow;
+}
+@mixin round-btn{
+    border-radius: 25px;
+}
+@mixin gradient-btn{
+    background: linear-gradient(-5deg, $primarycolor, $secondarycolor);
 }
 
 .body {
@@ -45,15 +51,15 @@ $footercolor: #353535;
     align-items: center;
     width: 100%;
     height: 50px;
-    background-color: #EAEAEA;
-    box-shadow: 0 5px 5px #d4d4d4 inset;
+    background-color: $mapscolor;
+    box-shadow: 0 5px 5px $shadow inset;
     gap: 18px;
     i{
         font-size: 1.1rem;
     }
     &__btn input{
         width: 140px;
-        background-color: #EAEAEA;
+        background-color: $mapscolor;
         border: none;
         font-size: 1rem;
         font-weight: 600;
@@ -67,7 +73,7 @@ $footercolor: #353535;
     width: 100%;
     height: auto;
     padding: 40px 0 50px 0;
-    background-color: #F6F6F6;
+    background-color: $groundcolor;
     text-align: center;
     p{
         font-size: 1.1rem;
@@ -86,14 +92,14 @@ h1{
     width: 220px;
     height: 50px;
     border: none;
-    color: #FFFFFF;
+    color: $basecolor;
     font-weight: 500;
     @include box-shadow($shadow);
     &--rounded{
-    border-radius: 25px;
+        @include round-btn;
     }
     &--gradient{
-    background: linear-gradient(-5deg, #9356DC, #FF79DA);
+        @include gradient-btn;
     }
 }
 
@@ -109,14 +115,14 @@ footer{
     justify-content: center;
     width: 100%;
     height: auto;
-    background-color: #353535;
+    background-color: $footercolor;
     padding: 30px 0 40px 40px;
     h2{
         font-family: 'Shrikhand';
         font-size: 1.2rem;
         font-weight: lighter;
         letter-spacing: 0.65px;
-        color: #FFFFFF;
+        color: $basecolor;
         width: 27%;
         text-align: center;
     }
@@ -129,7 +135,7 @@ ul.feedback{
         text-decoration: none;
         font-size: 1rem;
         font-weight: 400;
-        color: #FFFFFF;
+        color: $basecolor;
         line-height: 1.8;
         letter-spacing: 0.6px;
         i{

@@ -3,25 +3,30 @@
     font-family: 'Roboto', 'Shrikhand', Verdana, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+@import "./utils/_variables.scss";
+@import "./utils/_mixins.scss";
 
-$basecolor: #FFFFFF;
-$primarycolor: #9356DC;
-$secondarycolor: #FF79DA;
-$contrastcolor: #99E2D0;
-$shadow: #D4D4D4;
-$groundcolor: #F6F6F6;
-$mapscolor: #EAEAEA;
-$footercolor: #353535;
 
-@mixin box-shadow ($shadow){
-    box-shadow: 5px 5px 5px $shadow;
-}
-@mixin round-btn{
-    border-radius: 25px;
-}
-@mixin gradient-btn{
-    background: linear-gradient(-5deg, $primarycolor, $secondarycolor);
-}
+/* 
+Une fois que l’ensemble du code a bien été séparé en partiels et 
+importé, le fichier main.scss ne doit contenir que des imports. 
+Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
+
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
+*/
 
 .body {
     width: 100%;

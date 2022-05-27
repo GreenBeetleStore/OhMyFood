@@ -31,8 +31,8 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
     align-items: center;
     margin: 0;
     padding: 0;
-    font-size: 1rem;
     font-family: "Roboto";
+    font-size: 16px;
 }
 // Header
 .logo{
@@ -61,7 +61,7 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
         width: 140px;
         background-color: $mapscolor;
         border: none;
-        font-size: 1rem;
+        font-size: 0.8em;
         font-weight: 600;
     }
 }
@@ -72,32 +72,32 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: 40px 0 50px 0;
+    padding: 40px 20px 50px 20px;
     text-align: center;
+    h1{
+        width: 72%;
+        font-size: 1.25em;
+        font-weight: 800;
+        line-height: 115%;
+        margin-bottom: 12px;
+    }
     p{
-        font-size: 1.1rem;
+        font-size: 0.85em;
         line-height: 120%;
         margin-bottom: 30px;
     }
-}
-h1{
-    width: 62.2%;
-    font-size: 1.5rem;
-    font-weight: 800;
-    line-height: 115%;
-    margin-bottom: 12px;
-}
-.btn{
-    width: 220px;
-    height: 50px;
-    border: none;
-    @include typography;
-    @include box-shadow($shadow);
-    &--rounded{
-        @include round-btn;
-    }
-    &--gradient{
-        @include gradient-btn;
+    .btn{
+        width: 220px;
+        height: 50px;
+        border: none;
+        @include typography;
+        @include box-shadow($shadow);
+        &--rounded{
+            @include round-btn;
+        }
+        &--gradient{
+            @include gradient-btn;
+        }
     }
 }
 // Sections
@@ -134,7 +134,7 @@ h1{
         align-items: center;
         text-align: center;
         margin: 0px auto;
-        padding-top: 3px;
+        padding-top: 2px;
         position: absolute;
         left: -12px;
         @include typography;
@@ -173,11 +173,44 @@ h1{
         object-fit: cover;
         object-position: bottom ;
     }
-
+    &__new-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        border-radius: 2px;
+        background-color: $contrastcolor;
+        font-size: 0.8em;
+        font-weight: 500;
+        color: $newcolortext;
+        position: absolute;
+        top: 13px;
+        right: 12px;
+    }&__like{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 24px 20px 16px;
+    }
+    &__like__byline{
+        width: 166px;
+        height: 42px;
+        padding-top: -20px;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+    }
+    h3{
+        font-size: 1em;
+        font-weight: 700;
+    }
+    p{
+        font-size: 0.93em;
+    }
+    & i{
+        font-size: 24px;
+    }
 }
-
-
-
 /* FOOTER */
 footer{
     @include column;
@@ -185,10 +218,10 @@ footer{
     justify-content: center;
     height: auto;
     background-color: $footercolor;
-    padding: 30px 0 40px 40px;
+    padding: 30px 0 40px 30px;
     h2{
         font-family: 'Shrikhand';
-        font-size: 1.2rem;
+        font-size: 1em;
         font-weight: lighter;
         letter-spacing: 0.65px;
         color: $basecolor;
@@ -202,14 +235,14 @@ ul.feedback{
     padding: 15px 0 0 0;
     li a{
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 0.85em;
         font-weight: 400;
         color: $basecolor;
-        line-height: 1.8;
-        letter-spacing: 0.6px;
+        line-height: 1.7;
+        letter-spacing: 0.1px;
         i{
             width: 25px;
-            font-size: 0.8rem;
+            font-size: 1em;
         }
     }
 }

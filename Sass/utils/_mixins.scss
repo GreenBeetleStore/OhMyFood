@@ -27,8 +27,8 @@
 
 // Propriétés du h2
 @mixin h2s{
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 115%;;
 }
 
@@ -40,7 +40,7 @@
 // Typographie Lettres Blanches
 @mixin typography{
     color: $basecolor;
-    font-size: 1rem;
+    font-size: 0.85em;
     font-weight: 500;
 }
 
@@ -52,7 +52,7 @@
     position: relative;
     width: 320px;
     height: 72px;
-    padding: 28px 72px 24px 30px;
+    padding: 28px 30px 24px 30px;
     margin: 0 0 25px 12px;    
 }
 

@@ -9,3 +9,33 @@
     $mapscolor: #EAEAEA;
     $footercolor: #353535;
 
+/*Eh oui, des maps dans les maps ! Inception. 🤯
+
+Vous pouvez assigner n’importe quel type de données Sass comme valeurs 
+dans vos maps (ou listes). Vos inputs de texte doivent stocker trois 
+couleurs distinctes, du coup chaque clé contiendra elle-même une clé avec 
+trois valeurs : les couleurs de la bordure, du fond et du texte :
+
+$colour-primary: #15DEA5;
+$colour-secondary: #001534;
+$colour-accent: #D6FFF5;
+$colour-white: #fff;
+$colour-invalid: #DB464B;
+$txt-input-palette: (
+  active: (
+      bg: $colour-primary,
+      border: $colour-primary,
+      txt: $colour-white,
+  ),
+  focus: (
+      bg: $colour-primary,
+      border: $colour-primary,
+      txt: $colour-white,
+  ),
+  invalid: (
+      bg: $colour-invalid,
+      border: $colour-white,
+      txt: $colour-white,
+  )
+);
+*/

@@ -1,3 +1,8 @@
+//Background color
+@mixin ground{
+    background-color: $groundcolor;
+}
+
 // Standard Shadow
 @mixin box-shadow ($shadow){
     box-shadow: 5px 5px 5px $shadow;
@@ -22,8 +27,40 @@
 
 // Propriétés du h2
 @mixin h2s{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    line-height: 115%;
-    margin-left: 21px;
+    line-height: 115%;;
+}
+
+// Arrondi Général
+@mixin radius{
+    border-radius: 22px;
+}
+
+// Typographie Lettres Blanches
+@mixin typography{
+    color: $basecolor;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+// Cartes Étapes de fonctionnement
+@mixin cartes-howto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 320px;
+    height: 72px;
+    padding: 28px 72px 24px 30px;
+    margin: 0 0 25px 12px;    
+}
+
+// Icon + Text des Cartes
+@mixin inline{
+    display: flex;
+        align-items: center;
+        gap: 22px;
+        @include typography;
+        color: black;
 }

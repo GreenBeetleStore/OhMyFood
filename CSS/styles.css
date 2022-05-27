@@ -76,10 +76,6 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
   margin: 22px auto 12px auto;
 }
 
-.main {
-  width: 100%;
-}
-
 .maps {
   display: flex;
   justify-content: center;
@@ -105,11 +101,11 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #F6F6F6;
   justify-content: center;
   align-items: center;
   height: auto;
   padding: 40px 0 50px 0;
-  background-color: #F6F6F6;
   text-align: center;
 }
 .intro p {
@@ -119,8 +115,8 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
 }
 
 h1 {
-  width: 77.85%;
-  font-size: 1.6rem;
+  width: 62.2%;
+  font-size: 1.5rem;
   font-weight: 800;
   line-height: 115%;
   margin-bottom: 12px;
@@ -131,6 +127,7 @@ h1 {
   height: 50px;
   border: none;
   color: #FFFFFF;
+  font-size: 1rem;
   font-weight: 500;
   box-shadow: 5px 5px 5px #D4D4D4;
 }
@@ -139,6 +136,92 @@ h1 {
 }
 .btn--gradient {
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
+}
+
+.operative {
+  padding: 52px 20px 62px 20px;
+}
+
+.restaurants {
+  padding: 58px 20px;
+  background-color: #F6F6F6;
+}
+
+.headers {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 115%;
+  margin-bottom: 32px;
+}
+
+.howto {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 320px;
+  height: 72px;
+  padding: 28px 72px 24px 30px;
+  margin: 0 0 25px 12px;
+  border-radius: 22px;
+  box-shadow: 5px 5px 5px #D4D4D4;
+  background-color: #F6F6F6;
+}
+.howto--background {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 320px;
+  height: 72px;
+  padding: 28px 72px 24px 30px;
+  margin: 0 0 25px 12px;
+  border-radius: 22px;
+  box-shadow: 5px 5px 5px #D4D4D4;
+  background-color: #F5EDFF;
+}
+.howto__step--sort {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 3px;
+  position: absolute;
+  left: -12px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.howto__step__byline {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+.howto__step__byline i {
+  font-size: 22px;
+  color: #7E7E7E;
+}
+.howto__step__byline--bg {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+.howto__step__byline--bg i {
+  font-size: 22px;
+  color: #9356DC;
 }
 
 /* FOOTER */

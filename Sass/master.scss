@@ -36,6 +36,7 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
     font-size: 1rem;
     font-family: "Roboto";
 }
+//Header
 .logo{
     width: 100%;
     justify-content: center;
@@ -45,9 +46,9 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
         margin: 22px auto 12px auto;
     }
 }
-.main{
-    width: 100%;
-}
+// .main{
+//     width: 100%;
+// }
 .maps{
     display: flex;
     justify-content: center;
@@ -70,11 +71,11 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
 }
 .intro{
     @include column;
+    @include ground;
     justify-content: center;
     align-items: center;
     height: auto;
     padding: 40px 0 50px 0;
-    background-color: $groundcolor;
     text-align: center;
     p{
         font-size: 1.1rem;
@@ -83,8 +84,8 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
     }
 }
 h1{
-    width: 77.85%;
-    font-size: 1.6rem;
+    width: 62.2%;
+    font-size: 1.5rem;
     font-weight: 800;
     line-height: 115%;
     margin-bottom: 12px;
@@ -93,8 +94,7 @@ h1{
     width: 220px;
     height: 50px;
     border: none;
-    color: $basecolor;
-    font-weight: 500;
+    @include typography;
     @include box-shadow($shadow);
     &--rounded{
         @include round-btn;
@@ -103,10 +103,58 @@ h1{
         @include gradient-btn;
     }
 }
+.operative{
+    padding: 52px 20px 62px 20px;
+}
+.restaurants{
+    padding: 58px 20px;
+    @include ground;
+}
 .headers{
     @include h2s;
+    margin-bottom: 32px;
 }
-
+.howto{
+    @include cartes-howto;
+    @include radius;
+    @include box-shadow($shadow);
+    @include ground;
+    &--background{
+        @include cartes-howto;
+        @include radius;
+        @include box-shadow($shadow);
+        background-color: $tertiarycolor;
+    }
+    &__step--sort{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $primarycolor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+        padding-top: 3px;
+        position: absolute;
+        left: -12px;
+        @include typography;
+    }
+    &__step__byline{
+        @include inline;
+        i{
+            font-size: 22px;
+            color: $iconcolor;
+        }
+        &--bg{
+            @include inline;
+            i{
+                font-size: 22px;
+                color: $primarycolor;
+            }
+        }
+    }
+}
 
 
 

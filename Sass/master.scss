@@ -43,7 +43,6 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
         width: 44.25%;
         height: auto;
         margin: 22px auto 12px auto;
-        outline: 1px solid salmon;
     }
 }
 .main{
@@ -103,6 +102,9 @@ h1{
     &--gradient{
         @include gradient-btn;
     }
+}
+.headers{
+    @include h2s;
 }
 
 

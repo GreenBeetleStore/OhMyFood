@@ -3,7 +3,7 @@
     box-shadow: 5px 5px 5px $shadow;
 }
 
-//Rounded Button Shape
+// Rounded Button Shape
 @mixin round-btn{
     border-radius: 25px;
 }
@@ -18,4 +18,12 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+// Propriétés du h2
+@mixin h2s{
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 115%;
+    margin-left: 21px;
 }

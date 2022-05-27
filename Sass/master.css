@@ -244,6 +244,8 @@ h1 {
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
 }
 
 /* FOOTER */

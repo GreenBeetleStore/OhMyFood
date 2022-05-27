@@ -12,3 +12,10 @@
 @mixin gradient-btn{
     background: linear-gradient(-5deg, $primarycolor, $secondarycolor);
 }
+
+// Flex-Direction: Column;
+@mixin column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

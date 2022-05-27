@@ -29,9 +29,7 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
 */
 
 .body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -43,8 +41,9 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
     justify-content: center;
     img{
         width: 44.25%;
-        height: min-content;
+        height: auto;
         margin: 22px auto 12px auto;
+        outline: 1px solid salmon;
     }
 }
 .main{
@@ -71,11 +70,9 @@ Les ensembles de règles sont eux aussi rangés dans leurs propres partiels:
     }
 }
 .intro{
-    display: flex;
-    flex-direction: column;
+    @include column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: auto;
     padding: 40px 0 50px 0;
     background-color: $groundcolor;
@@ -114,11 +111,9 @@ h1{
 
 /* FOOTER */
 footer{
-    display: flex;
-    flex-direction: column;
+    @include column;
     align-items: flex-start;
     justify-content: center;
-    width: 100%;
     height: auto;
     background-color: $footercolor;
     padding: 30px 0 40px 40px;

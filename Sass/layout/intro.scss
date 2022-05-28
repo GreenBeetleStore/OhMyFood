@@ -1,0 +1,35 @@
+// Rubrique Introduction
+.intro{
+    @include column;
+    @include ground;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 40px 20px 50px 20px;
+    text-align: center;
+    h1{
+        width: 72%;
+        font-size: 1.25em;
+        font-weight: 800;
+        line-height: 115%;
+        margin-bottom: 12px;
+    }
+    p{
+        font-size: 0.85em;
+        line-height: 120%;
+        margin-bottom: 30px;
+    }
+    .btn{
+        width: 220px;
+        height: 50px;
+        border: none;
+        @include typography;
+        @include box-shadow($shadow);
+        &--rounded{
+            @include round-btn;
+        }
+        &--gradient{
+            @include gradient-btn;
+        }
+    }
+}

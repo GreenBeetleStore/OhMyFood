@@ -1,0 +1,21 @@
+// Rubrique Maps
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: $mapscolor;
+    box-shadow: 0 5px 5px $shadow inset;
+    gap: 18px;
+    i{
+        font-size: 1.1rem;
+    }
+    &__btn input{
+        width: 140px;
+        background-color: $mapscolor;
+        border: none;
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+}

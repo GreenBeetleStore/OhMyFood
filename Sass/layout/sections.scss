@@ -1,0 +1,112 @@
+// Sections
+.operative{
+    padding: 52px 20px 62px 20px;
+}
+.restaurants{
+    padding: 58px 20px;
+    @include ground;
+}
+.headers{
+    @include h2s;
+    margin-bottom: 32px;
+}
+// Section Fonctionnement
+.howto{
+    @include cartes-howto;
+    @include radius;
+    @include box-shadow($shadow);
+    @include ground;
+    &--background{
+        @include cartes-howto;
+        @include radius;
+        @include box-shadow($shadow);
+        background-color: $secondarybtncolor;
+    }
+    &__step--sort{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: $primarycolor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px auto;
+        padding-top: 2px;
+        position: absolute;
+        left: -12px;
+        @include typography;
+    }
+    &__step__byline{
+        @include inline;
+        i{
+            font-size: 22px;
+            color: $iconcolor;
+        }
+        &--bg{
+            @include inline;
+            i{
+                font-size: 22px;
+                color: $primarycolor;
+            }
+        }
+    }
+}
+// Section Restaurants
+.card{
+    @include column;
+    @include radius;
+    @include box-shadow($shadow);
+    position: relative;
+    height: 252px;
+    background-color: $basecolor;
+    margin-bottom: 20px;
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+    & img{
+        width: 100%;
+        height: 175px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        object-position: bottom ;
+    }
+    &__new-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 29px;
+        border-radius: 2px;
+        background-color: $tertiarycolor;
+        font-size: 0.8em;
+        font-weight: 500;
+        color: $newcolortext;
+        position: absolute;
+        top: 13px;
+        right: 12px;
+    }&__like{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 24px 20px 16px;
+    }
+    &__like__byline{
+        width: 166px;
+        height: 42px;
+        padding-top: -20px;
+        line-height: 1.3;
+        letter-spacing: -0.5px;
+    }
+    h3{
+        font-size: 1em;
+        font-weight: 700;
+    }
+    p{
+        font-size: 0.93em;
+    }
+    & i{
+        font-size: 24px;
+    }
+}

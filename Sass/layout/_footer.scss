@@ -1,12 +1,12 @@
 /* FOOTER */
-footer{
+.footer{
     @include column;
     align-items: flex-start;
     justify-content: center;
     height: auto;
     background-color: $footercolor;
     padding: 30px 0 40px 30px;
-    h2{
+    & h2{
         font-family: 'Shrikhand';
         font-size: 1em;
         font-weight: lighter;
@@ -15,21 +15,21 @@ footer{
         width: 27%;
         text-align: center;
     }
-}
-ul.feedback{
-    list-style: none;
-    margin: 0;
-    padding: 15px 0 0 0;
-    li a{
-        text-decoration: none;
-        font-size: 0.85em;
-        font-weight: 400;
-        color: $basecolor;
-        line-height: 1.7;
-        letter-spacing: 0.1px;
-        i{
-            width: 25px;
-            font-size: 1em;
+    & ul.feedback{
+        list-style: none;
+        margin: 0;
+        padding: 15px 0 0 0;
+        li a{
+            text-decoration: none;
+            font-size: 0.85em;
+            font-weight: 400;
+            color: $basecolor;
+            line-height: 1.7;
+            letter-spacing: 0.1px;
+            i{
+                width: 25px;
+                font-size: 1em;
+            }
         }
     }
 }

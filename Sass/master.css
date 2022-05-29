@@ -263,7 +263,7 @@ $txt-input-palette: (
 }
 
 /* FOOTER */
-footer {
+.footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -273,7 +273,7 @@ footer {
   background-color: #353535;
   padding: 30px 0 40px 30px;
 }
-footer h2 {
+.footer h2 {
   font-family: "Shrikhand";
   font-size: 1em;
   font-weight: lighter;
@@ -282,13 +282,12 @@ footer h2 {
   width: 27%;
   text-align: center;
 }
-
-ul.feedback {
+.footer ul.feedback {
   list-style: none;
   margin: 0;
   padding: 15px 0 0 0;
 }
-ul.feedback li a {
+.footer ul.feedback li a {
   text-decoration: none;
   font-size: 0.85em;
   font-weight: 400;
@@ -296,7 +295,7 @@ ul.feedback li a {
   line-height: 1.7;
   letter-spacing: 0.1px;
 }
-ul.feedback li a i {
+.footer ul.feedback li a i {
   width: 25px;
   font-size: 1em;
 }
@@ -336,23 +335,44 @@ ul.feedback li a i {
   justify-content: space-between;
   align-items: center;
 }
-.menus h1 {
-  width: 75%;
+.menus__titles h1 {
+  width: auto;
   font-family: "Shrikhand";
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: 500;
   padding: 6px;
 }
-.menus i {
+.menus__titles i {
   font-size: 1.7em;
-  padding-right: 24px;
+  padding-right: 22px;
 }
-.menus p {
-  padding: 6px;
+.menus__subtitles {
+  font-size: 0.9em;
+  padding: 24px 0 6px 6px;
 }
 .menus__underline {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
-  margin: -4px 0 14 6px;
+  margin: -3px 0 14px 6px;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 70px;
+  border-radius: 14px;
+  background-color: #FFFFFF;
+  padding: 16px 24px 14px 12px;
+  margin-bottom: 12px;
+  box-shadow: 5px 5px 5px #D4D4D4;
+}
+.dish__name, .dish h3 {
+  font-size: 1em;
+  letter-spacing: -1px;
+}
+.dish__name p, .dish h3 p {
+  font-size: 0.85em;
 }/*# sourceMappingURL=master.css.map */

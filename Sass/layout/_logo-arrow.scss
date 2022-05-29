@@ -1,0 +1,19 @@
+// Header
+.logo-arrow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        left: 24px;
+        top: 26px;
+    }
+    img{
+        width: 44.25%;
+        height: auto;
+        margin: 22px auto 12px auto;
+    }
+}

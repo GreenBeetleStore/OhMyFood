@@ -40,6 +40,7 @@ $txt-input-palette: (
   font-family: "Roboto", "Shrikhand", Verdana, Tahoma, sans-serif;
   box-sizing: border-box;
   font-size: 16px;
+  position: relative;
 }
 
 .logo {
@@ -298,4 +299,60 @@ ul.feedback li a {
 ul.feedback li a i {
   width: 25px;
   font-size: 1em;
+}
+
+.logo-arrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-arrow i {
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 24px;
+  top: 26px;
+}
+.logo-arrow img {
+  width: 44.25%;
+  height: auto;
+  margin: 22px auto 12px auto;
+}
+
+.menus {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding: 30px 3.73% 58px 3.73%;
+  position: absolute;
+  top: 283px;
+  background-color: #F6F6F6;
+  border-radius: 36px 36px 0 0;
+}
+.menus__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menus h1 {
+  width: 75%;
+  font-family: "Shrikhand";
+  font-size: 1.6em;
+  font-weight: 500;
+  padding: 6px;
+}
+.menus i {
+  font-size: 1.7em;
+  padding-right: 24px;
+}
+.menus p {
+  padding: 6px;
+}
+.menus__underline {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin: -4px 0 14 6px;
 }/*# sourceMappingURL=master.css.map */

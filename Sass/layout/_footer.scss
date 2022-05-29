@@ -1,6 +1,7 @@
 /* FOOTER */
 .footer{
     @include column;
+    display: flex;
     align-items: flex-start;
     justify-content: center;
     height: auto;

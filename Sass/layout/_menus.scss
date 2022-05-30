@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 30px 3.73% 58px 3.73%;
     position: relative;
-    top: 225px;
+    top: 220px;
     background-color: $groundcolor;
     border-radius: 36px 36px 0 0;
     &__titles{
@@ -24,5 +24,8 @@
             font-size: 1.7em;
             padding-right: 22px;
         }
+    }
+    .btn{
+        align-self: center;
     }
 }

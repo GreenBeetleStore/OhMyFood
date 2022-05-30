@@ -44,7 +44,7 @@ $txt-input-palette: (
 .body .main2 {
   position: relative;
   width: 100%;
-  margin-bottom: 225px;
+  margin-bottom: 220px;
 }
 
 .logo {
@@ -102,8 +102,9 @@ $txt-input-palette: (
   margin-bottom: 30px;
 }
 .intro .btn {
-  width: 220px;
-  height: 50px;
+  width: auto;
+  height: auto;
+  padding: 14px 24px 14px 24px;
   border: none;
   color: #FFFFFF;
   font-size: 0.85em;
@@ -331,7 +332,7 @@ $txt-input-palette: (
   flex-direction: column;
   padding: 30px 3.73% 58px 3.73%;
   position: relative;
-  top: 225px;
+  top: 220px;
   background-color: #F6F6F6;
   border-radius: 36px 36px 0 0;
 }
@@ -350,6 +351,9 @@ $txt-input-palette: (
 .menus__titles i {
   font-size: 1.7em;
   padding-right: 22px;
+}
+.menus .btn {
+  align-self: center;
 }
 
 .main-dishes__subtitles {
@@ -385,7 +389,23 @@ $txt-input-palette: (
 
 .cover {
   position: absolute;
-  margin-bottom: -55px;
+}
+
+.btn {
+  width: auto;
+  height: auto;
+  padding: 14px 24px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 0.85em;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px #D4D4D4;
+}
+.btn--rounded {
+  border-radius: 25px;
+}
+.btn--gradient {
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }
 
 /*# sourceMappingURL=styles.css.map */

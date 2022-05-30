@@ -1,0 +1,15 @@
+// Button Round Gradient
+.btn{
+    width: auto;
+    height: auto;
+    padding: 14px 24px;
+    border: none;
+    @include typography;
+    @include box-shadow($shadow);
+    &--rounded{
+        @include round-btn;
+    }
+    &--gradient{
+        @include gradient-btn;
+    }
+}

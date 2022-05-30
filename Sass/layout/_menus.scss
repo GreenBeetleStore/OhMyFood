@@ -5,8 +5,8 @@
     height: auto;
     flex-direction: column;
     padding: 30px 3.73% 58px 3.73%;
-    position: fixed;
-    margin-top: -55px;
+    position: relative;
+    top: 225px;
     background-color: $groundcolor;
     border-radius: 36px 36px 0 0;
     &__titles{

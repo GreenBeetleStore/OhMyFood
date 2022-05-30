@@ -41,6 +41,12 @@ $txt-input-palette: (
   box-sizing: border-box;
   font-size: 16px;
 }
+.body .main2 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 225px;
+}
+
 .logo {
   width: 100%;
   justify-content: center;
@@ -266,6 +272,8 @@ $txt-input-palette: (
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
+  width: 100%;
   height: auto;
   background-color: #353535;
   padding: 30px 0 40px 30px;
@@ -322,8 +330,8 @@ $txt-input-palette: (
   height: auto;
   flex-direction: column;
   padding: 30px 3.73% 58px 3.73%;
-  position: fixed;
-  margin-top: -55px;
+  position: relative;
+  top: 225px;
   background-color: #F6F6F6;
   border-radius: 36px 36px 0 0;
 }
@@ -373,6 +381,11 @@ $txt-input-palette: (
 }
 .dish__name p, .dish h3 p {
   font-size: 0.85em;
+}
+
+.cover {
+  position: absolute;
+  margin-bottom: -55px;
 }
 
 /*# sourceMappingURL=styles.css.map */

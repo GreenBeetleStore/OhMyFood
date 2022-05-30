@@ -17,13 +17,13 @@
     p{
         font-size: 0.85em;
         line-height: 120%;
-        margin-bottom: 30px;
     }
     .btn{
         width: auto;
         height: auto;
-        padding: 14px 24px 14px 24px;
+        padding: 14px 24px;
         border: none;
+        margin-top: 30px;
         @include typography;
         @include box-shadow($shadow);
         &--rounded{

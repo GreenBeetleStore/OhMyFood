@@ -99,13 +99,13 @@ $txt-input-palette: (
 .intro p {
   font-size: 0.85em;
   line-height: 120%;
-  margin-bottom: 30px;
 }
 .intro .btn {
   width: auto;
   height: auto;
-  padding: 14px 24px 14px 24px;
+  padding: 14px 24px;
   border: none;
+  margin-top: 30px;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
@@ -313,6 +313,8 @@ $txt-input-palette: (
   align-items: center;
 }
 .logo-arrow i {
+  text-decoration: none;
+  color: black;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -344,7 +346,7 @@ $txt-input-palette: (
 .menus__titles h1 {
   width: auto;
   font-family: "Shrikhand";
-  font-size: 1.5em;
+  font-size: 1.45em;
   font-weight: 500;
   padding: 6px;
 }
@@ -352,12 +354,10 @@ $txt-input-palette: (
   font-size: 1.7em;
   padding-right: 22px;
 }
-.menus .btn {
-  align-self: center;
-}
 
 .main-dishes__subtitles {
   font-size: 0.9em;
+  font-weight: 400;
   padding: 24px 0 6px 6px;
 }
 .main-dishes__underline {
@@ -392,10 +392,12 @@ $txt-input-palette: (
 }
 
 .btn {
+  align-self: center;
   width: auto;
   height: auto;
-  padding: 14px 24px;
+  padding: 14px 50px;
   border: none;
+  margin-top: 30px;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;

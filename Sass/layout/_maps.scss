@@ -8,7 +8,7 @@
     max-width: 1600px;
     background-color: $mapscolor;
     box-shadow: 0 5px 5px $shadow inset;
-    gap: 20px;
+    // gap: 20px;
     &__btn{
         display: flex;
         justify-content: center;
@@ -17,9 +17,10 @@
             font-size: 1em;
             align-self: center;
             padding-bottom: 5px;
+            // margin-right: 20px;
         }
         & input{
-            width: 57%;
+            width: 70%;
             text-align: center;
             max-width: 100%;
             background-color: $mapscolor;

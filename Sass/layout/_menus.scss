@@ -27,4 +27,18 @@
             padding-right: 5.87%; /* 22px; */
         }
     }
+    @media (min-width: 430px) {
+        top: 260px;
+    }
+    @media (min-width: 500px) {
+        top: 300px;
+    }
+    @media (min-width: 590px) {
+        top: 340px;
+    }
+    @media (min-width: 640px) {
+        top: 20px;
+        margin-bottom: -180px;
+        border-radius: 36px 36px;
+    }
 }

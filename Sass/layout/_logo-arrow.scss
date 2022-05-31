@@ -22,5 +22,17 @@
         position: relative;
         bottom: -5px;
         margin: 5% 0;
+        @media (min-width: 500px){
+            font-size: 25px;
+            bottom: 0px;
+        } 
+        @media (min-width: 640px){
+            font-size: 30px;
+            bottom: 4px;
+        }
+        @media (min-width: 1080px){
+            font-size: 34px;
+            bottom: 7px;
+        }
     }
 }

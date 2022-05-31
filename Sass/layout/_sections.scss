@@ -1,16 +1,19 @@
 // Sections
-.operative{
-    padding: 52px 20px 62px 20px;
-}
-.restaurants{
-    padding: 58px 20px;
-    @include ground;
-}
 .headers{
     @include h2s;
     margin-bottom: 32px;
 }
 // Section Fonctionnement
+.operative{ 
+    align-items: center;
+    padding: 52px 5.5% 62px 5.5%;
+    max-width: 640px;
+    margin: auto;
+    & h2{
+        align-self: flex-start;
+        margin-left: 1%;
+    }
+}
 .howto{
     @include cartes-howto;
     @include radius;
@@ -53,12 +56,26 @@
     }
 }
 // Section Restaurants
+.restaurants{
+    @include column;
+    @include ground;
+    align-items: center;
+    max-width: 640px;
+    margin: auto;
+    padding: 58px 5.5%;
+    & h2{
+        align-self: flex-start;
+        margin-left: 1%;
+    }
+}
 .card{
     @include column;
     @include radius;
     @include box-shadow($shadow);
     position: relative;
-    height: 252px;
+    width: 100%;
+    max-width: 420px;
+    height: auto; /* 252px; */
     background-color: $basecolor;
     margin-bottom: 20px;
     & a{
@@ -67,7 +84,7 @@
     }
     & img{
         width: 100%;
-        height: 175px;
+        height:175px; 
         border-radius: 20px 20px 0 0;
         object-fit: cover;
         object-position: bottom ;

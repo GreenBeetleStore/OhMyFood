@@ -20,7 +20,6 @@
 
 // Flex-Direction: Column;
 @mixin column{
-    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -47,20 +46,22 @@
 // Cartes Étapes de fonctionnement
 @mixin cartes-howto{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     position: relative;
-    width: 320px;
+    width: 96%;
+    max-width: 500px;
     height: 72px;
-    padding: 28px 30px 24px 30px;
+    padding: 28px 40px 24px 40px;
     margin: 0 0 25px 12px;    
 }
 
 // Icon + Text des Cartes
 @mixin inline{
     display: flex;
-        align-items: center;
-        gap: 22px;
-        @include typography;
-        color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    @include typography;
+    color: black;
 }

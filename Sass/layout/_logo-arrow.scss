@@ -1,21 +1,26 @@
-// Header
+// Header Menus
 .logo-arrow{
-    width: 100%;
-    display: flex;
+    display: flexbox;
     justify-content: center;
     align-items: center;
-    i {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    padding: 0 20px;
+    & img{            
+        width: 44.25%;
+        max-width: 992px;
+        height: auto;
+        margin: 22px auto 12px auto;
+    }
+    & i {
         text-decoration: none;
         color: black;
         font-size: 20px;
         font-weight: 700;
-        position: absolute;
-        left: 24px;
-        top: 26px;
-    }
-    img{
-        width: 44.25%;
-        height: auto;
-        margin: 22px auto 12px auto;
+        float: left;
+        position: relative;
+        bottom: -5px;
+        margin: 5% 0;
     }
 }

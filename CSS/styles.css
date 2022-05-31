@@ -31,24 +31,32 @@ $txt-input-palette: (
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 .body {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1600px;
   align-items: center;
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: "Roboto", "Shrikhand", Verdana, Tahoma, sans-serif;
   box-sizing: border-box;
   font-size: 16px;
 }
+.body .main {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+}
 .body .main2 {
   position: relative;
   width: 100%;
+  max-width: 1600px;
   margin-bottom: 220px;
 }
 
 .logo {
   width: 100%;
+  max-width: 992px;
   justify-content: center;
 }
 .logo img {
@@ -62,29 +70,39 @@ $txt-input-palette: (
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: auto;
+  max-width: 1600px;
   background-color: #EAEAEA;
   box-shadow: 0 5px 5px #D4D4D4 inset;
-  gap: 18px;
+  gap: 20px;
 }
-.maps i {
-  font-size: 1.1rem;
+.maps__btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.maps__btn i {
+  font-size: 1em;
+  align-self: center;
+  padding-bottom: 5px;
 }
 .maps__btn input {
-  width: 140px;
+  width: 57%;
+  text-align: center;
+  max-width: 100%;
   background-color: #EAEAEA;
   border: none;
-  font-size: 0.8em;
-  font-weight: 600;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 .intro {
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: auto;
   padding: 40px 20px 50px 20px;
   text-align: center;
@@ -118,15 +136,6 @@ $txt-input-palette: (
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }
 
-.operative {
-  padding: 52px 20px 62px 20px;
-}
-
-.restaurants {
-  padding: 58px 20px;
-  background-color: #F6F6F6;
-}
-
 .headers {
   font-size: 1.2rem;
   font-weight: 700;
@@ -134,14 +143,26 @@ $txt-input-palette: (
   margin-bottom: 32px;
 }
 
+.operative {
+  align-items: center;
+  padding: 52px 5.5% 62px 5.5%;
+  max-width: 640px;
+  margin: auto;
+}
+.operative h2 {
+  align-self: flex-start;
+  margin-left: 1%;
+}
+
 .howto {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 96%;
+  max-width: 500px;
   height: 72px;
-  padding: 28px 30px 24px 30px;
+  padding: 28px 40px 24px 40px;
   margin: 0 0 25px 12px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #D4D4D4;
@@ -149,12 +170,13 @@ $txt-input-palette: (
 }
 .howto--background {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 96%;
+  max-width: 500px;
   height: 72px;
-  padding: 28px 30px 24px 30px;
+  padding: 28px 40px 24px 40px;
   margin: 0 0 25px 12px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #D4D4D4;
@@ -179,8 +201,9 @@ $txt-input-palette: (
 }
 .howto__step__byline {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
@@ -192,8 +215,9 @@ $txt-input-palette: (
 }
 .howto__step__byline--bg {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 22px;
+  gap: 24px;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
@@ -204,14 +228,30 @@ $txt-input-palette: (
   color: #9356DC;
 }
 
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  align-items: center;
+  max-width: 640px;
+  margin: auto;
+  padding: 58px 5.5%;
+}
+.restaurants h2 {
+  align-self: flex-start;
+  margin-left: 1%;
+}
+
 .card {
-  width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #D4D4D4;
   position: relative;
-  height: 252px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  /* 252px; */
   background-color: #FFFFFF;
   margin-bottom: 20px;
 }
@@ -267,7 +307,6 @@ $txt-input-palette: (
 
 /* FOOTER */
 .footer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   display: flex;
@@ -275,25 +314,35 @@ $txt-input-palette: (
   justify-content: center;
   position: relative;
   width: 100%;
+  max-width: 1600px;
   height: auto;
   background-color: #353535;
-  padding: 30px 0 40px 30px;
+  padding: 30px 0 40px 8%;
+  margin: auto;
 }
-.footer h2 {
+
+.sock {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+.sock h2 {
   font-family: "Shrikhand";
   font-size: 1em;
   font-weight: lighter;
   letter-spacing: 0.65px;
   color: #FFFFFF;
-  width: 27%;
-  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  align-self: flex-start;
 }
-.footer ul.feedback {
+.sock ul.feedback {
   list-style: none;
   margin: 0;
   padding: 15px 0 0 0;
 }
-.footer ul.feedback li a {
+.sock ul.feedback li a {
   text-decoration: none;
   font-size: 0.85em;
   font-weight: 400;
@@ -301,38 +350,45 @@ $txt-input-palette: (
   line-height: 1.7;
   letter-spacing: 0.1px;
 }
-.footer ul.feedback li a i {
+.sock ul.feedback li a i {
   width: 25px;
   font-size: 1em;
 }
 
 .logo-arrow {
-  width: 100%;
-  display: flex;
+  display: flexbox;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  padding: 0 20px;
+}
+.logo-arrow img {
+  width: 44.25%;
+  max-width: 992px;
+  height: auto;
+  margin: 22px auto 12px auto;
 }
 .logo-arrow i {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 700;
-  position: absolute;
-  left: 24px;
-  top: 26px;
-}
-.logo-arrow img {
-  width: 44.25%;
-  height: auto;
-  margin: 22px auto 12px auto;
+  float: left;
+  position: relative;
+  bottom: -5px;
+  margin: 5% 0;
 }
 
 .menus {
   display: flex;
   width: 100%;
+  max-width: 640px;
+  margin: auto;
   height: auto;
   flex-direction: column;
-  padding: 30px 3.73% 58px 3.73%;
+  padding: 30px 5% 58px 5%;
   position: relative;
   top: 220px;
   background-color: #F6F6F6;
@@ -348,23 +404,24 @@ $txt-input-palette: (
   font-family: "Shrikhand";
   font-size: 1.45em;
   font-weight: 500;
-  padding: 6px;
+  padding: 6px 1.6%;
 }
 .menus__titles i {
   font-size: 1.7em;
-  padding-right: 22px;
+  padding-right: 5.87%;
+  /* 22px; */
 }
 
 .main-dishes__subtitles {
   font-size: 0.9em;
   font-weight: 400;
-  padding: 24px 0 6px 6px;
+  padding: 24px 0 6px 1.6%;
 }
 .main-dishes__underline {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
-  margin: -3px 0 14px 6px;
+  margin: -3px 0 14px 1.6%;
 }
 
 .dish {
@@ -372,11 +429,12 @@ $txt-input-palette: (
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
+  max-width: 600px;
   height: 70px;
   border-radius: 14px;
   background-color: #FFFFFF;
   padding: 16px 24px 14px 12px;
-  margin-bottom: 12px;
+  margin: 0 auto 12px auto;
   box-shadow: 5px 5px 5px #D4D4D4;
 }
 .dish__name, .dish h3 {
@@ -388,7 +446,9 @@ $txt-input-palette: (
 }
 
 .cover {
+  align-self: center;
   position: absolute;
+  max-width: 640px;
 }
 
 .btn {

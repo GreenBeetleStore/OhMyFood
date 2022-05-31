@@ -32,6 +32,7 @@ $txt-input-palette: (
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 .body {
   width: 100%;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +42,13 @@ $txt-input-palette: (
   box-sizing: border-box;
   font-size: 16px;
 }
+.body .main2 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 220px;
+}
+
 .logo {
   width: 100%;
   justify-content: center;
@@ -56,7 +64,8 @@ $txt-input-palette: (
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50px;
+  height: auto;
+  max-width: 650px;
   background-color: #EAEAEA;
   box-shadow: 0 5px 5px #D4D4D4 inset;
   gap: 18px;
@@ -65,7 +74,7 @@ $txt-input-palette: (
   font-size: 1.1rem;
 }
 .maps__btn input {
-  width: 140px;
+  width: 38%;
   background-color: #EAEAEA;
   border: none;
   font-size: 0.8em;
@@ -74,6 +83,7 @@ $txt-input-palette: (
 
 .intro {
   width: 100%;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
@@ -93,12 +103,13 @@ $txt-input-palette: (
 .intro p {
   font-size: 0.85em;
   line-height: 120%;
-  margin-bottom: 30px;
 }
 .intro .btn {
-  width: 220px;
-  height: 50px;
+  width: auto;
+  height: auto;
+  padding: 14px 24px;
   border: none;
+  margin-top: 30px;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
@@ -132,7 +143,8 @@ $txt-input-palette: (
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 85.3%;
+  max-width: 450px;
   height: 72px;
   padding: 28px 30px 24px 30px;
   margin: 0 0 25px 12px;
@@ -145,7 +157,8 @@ $txt-input-palette: (
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  width: 320px;
+  width: 85.3%;
+  max-width: 450px;
   height: 72px;
   padding: 28px 30px 24px 30px;
   margin: 0 0 25px 12px;
@@ -199,6 +212,7 @@ $txt-input-palette: (
 
 .card {
   width: 100%;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -263,11 +277,14 @@ $txt-input-palette: (
 /* FOOTER */
 .footer {
   width: 100%;
+  max-width: 650px;
   display: flex;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
+  width: 100%;
   height: auto;
   background-color: #353535;
   padding: 30px 0 40px 30px;
@@ -306,6 +323,8 @@ $txt-input-palette: (
   align-items: center;
 }
 .logo-arrow i {
+  text-decoration: none;
+  color: black;
   font-size: 20px;
   font-weight: 700;
   position: absolute;
@@ -324,8 +343,8 @@ $txt-input-palette: (
   height: auto;
   flex-direction: column;
   padding: 30px 3.73% 58px 3.73%;
-  position: fixed;
-  margin-top: -55px;
+  position: relative;
+  top: 220px;
   background-color: #F6F6F6;
   border-radius: 36px 36px 0 0;
 }
@@ -337,7 +356,7 @@ $txt-input-palette: (
 .menus__titles h1 {
   width: auto;
   font-family: "Shrikhand";
-  font-size: 1.5em;
+  font-size: 1.45em;
   font-weight: 500;
   padding: 6px;
 }
@@ -348,6 +367,7 @@ $txt-input-palette: (
 
 .main-dishes__subtitles {
   font-size: 0.9em;
+  font-weight: 400;
   padding: 24px 0 6px 6px;
 }
 .main-dishes__underline {
@@ -375,4 +395,27 @@ $txt-input-palette: (
 }
 .dish__name p, .dish h3 p {
   font-size: 0.85em;
+}
+
+.cover {
+  position: absolute;
+}
+
+.btn {
+  align-self: center;
+  width: auto;
+  height: auto;
+  padding: 14px 50px;
+  border: none;
+  margin-top: 30px;
+  color: #FFFFFF;
+  font-size: 0.85em;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px #D4D4D4;
+}
+.btn--rounded {
+  border-radius: 25px;
+}
+.btn--gradient {
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }/*# sourceMappingURL=master.css.map */

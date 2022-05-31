@@ -1,15 +1,23 @@
 // Body
 .body {
     @include column;
+    width: 100%;
+    max-width: 1600px;
     align-items: center;
-    margin: 0;
+    margin: auto;
     padding: 0;
     font-family: 'Roboto', 'Shrikhand', Verdana, Tahoma, sans-serif;
     box-sizing: border-box;
     font-size: 16px;
+    .main{
+        position: relative;
+        width: 100%;
+        max-width: 1600px;
+    }
     .main2{
         position: relative;
         width: 100%;
+        max-width: 1600px;
         margin-bottom: 220px;
     }
 }

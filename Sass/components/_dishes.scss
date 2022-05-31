@@ -1,16 +1,15 @@
 // Nom du plat et garniture
 .main-dishes{
-           
     &__subtitles{
         font-size: 0.9em; 
         font-weight: 400;
-        padding: 24px 0 6px 6px;
+        padding: 24px 0 6px 1.6%;
     }
     &__underline{
         width: 40px;
         height: 3px;
         background-color: $tertiarycolor;
-        margin: -3px 0 14px 6px;
+        margin: -3px 0 14px 1.6%;
     }
 }
 .dish{
@@ -18,11 +17,12 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+    max-width: 600px;
     height: 70px;
     border-radius: 14px;
     background-color: $basecolor;
     padding: 16px 24px 14px 12px;
-    margin-bottom: 12px;
+    margin: 0 auto 12px auto;
     @include box-shadow ($shadow);
     &__name, h3{
         font-size: 1em;

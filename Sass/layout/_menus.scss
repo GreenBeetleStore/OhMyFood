@@ -2,9 +2,11 @@
 .menus{
     display: flex;
     width: 100%;
+    max-width: 640px;
+    margin: auto;
     height: auto;
     flex-direction: column;
-    padding: 30px 3.73% 58px 3.73%;
+    padding: 30px 5% 58px 5%;
     position: relative;
     top: 220px;
     background-color: $groundcolor;
@@ -18,11 +20,11 @@
             font-family: 'Shrikhand';
             font-size: 1.45em;
             font-weight: 500;
-            padding: 6px;
+            padding: 6px 1.6%;
         }
         & i{
             font-size: 1.7em;
-            padding-right: 22px;
+            padding-right: 5.87%; /* 22px; */
         }
     }
 }

@@ -108,6 +108,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 14px 24px 20px 16px;
+        & img{
+            display: none;
+        }
     }
     &__like__byline{
         width: 166px;
@@ -125,5 +128,22 @@
     }
     & i{
         font-size: 24px;
+    }
+    &.heart{
+        // transform: scale(0);
+    }
+    
+    &:hover .heart{
+        & i{
+            display: none;
+        }
+        & img{
+            display: flex;
+            width: 31px;
+            height: 29px;
+            // transform-origin: center;
+            // transform: scale(1);
+            // transition: transform 500ms;
+        }
     }
 }

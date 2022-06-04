@@ -353,6 +353,9 @@ $txt-input-palette: (
   align-items: center;
   padding: 14px 24px 20px 16px;
 }
+.card__like img {
+  display: none;
+}
 .card__like__byline {
   width: 166px;
   height: 42px;
@@ -369,6 +372,14 @@ $txt-input-palette: (
 }
 .card i {
   font-size: 24px;
+}
+.card:hover .heart i {
+  display: none;
+}
+.card:hover .heart img {
+  display: flex;
+  width: 31px;
+  height: 29px;
 }
 
 .restaurants__container {

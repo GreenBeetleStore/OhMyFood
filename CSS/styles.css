@@ -59,6 +59,59 @@ $txt-input-palette: (
   margin-bottom: 220px;
 }
 
+.menus {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+  height: auto;
+  flex-direction: column;
+  padding: 30px 5% 58px 5%;
+  position: relative;
+  top: 220px;
+  background-color: #F6F6F6;
+  border-radius: 36px 36px 0 0;
+}
+.menus__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menus__titles h1 {
+  width: auto;
+  font-family: "Shrikhand";
+  font-size: 1.45em;
+  font-weight: 500;
+  padding: 6px 1.6%;
+}
+.menus__titles i {
+  font-size: 1.7em;
+  padding-right: 5.87%;
+  /* 22px; */
+}
+@media (min-width: 430px) {
+  .menus {
+    top: 260px;
+  }
+}
+@media (min-width: 500px) {
+  .menus {
+    top: 300px;
+  }
+}
+@media (min-width: 590px) {
+  .menus {
+    top: 340px;
+  }
+}
+@media (min-width: 640px) {
+  .menus {
+    top: 20px;
+    margin-bottom: -180px;
+    border-radius: 36px 36px;
+  }
+}
+
 .logo {
   width: 100%;
   max-width: 992px;
@@ -140,6 +193,13 @@ $txt-input-palette: (
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }
 
+@media (min-width: 992px) {
+  .operative h2 {
+    position: relative;
+    left: 145px;
+  }
+}
+
 .headers {
   font-size: 1.2rem;
   font-weight: 700;
@@ -164,8 +224,8 @@ $txt-input-palette: (
   align-items: center;
   position: relative;
   width: 96%;
-  max-width: 500px;
-  height: 72px;
+  max-width: 550px;
+  height: auto;
   padding: 28px 40px 24px 40px;
   margin: 0 0 25px 12px;
   border-radius: 20px;
@@ -178,8 +238,8 @@ $txt-input-palette: (
   align-items: center;
   position: relative;
   width: 96%;
-  max-width: 500px;
-  height: 72px;
+  max-width: 550px;
+  height: auto;
   padding: 28px 40px 24px 40px;
   margin: 0 0 25px 12px;
   border-radius: 20px;
@@ -309,6 +369,34 @@ $txt-input-palette: (
   font-size: 24px;
 }
 
+.restaurants__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .restaurants {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+  }
+  .restaurants h2 {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  .restaurants__container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 42px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 40px auto;
+  }
+}
+
 /* FOOTER */
 .footer {
   display: flex;
@@ -359,6 +447,14 @@ $txt-input-palette: (
   font-size: 1em;
 }
 
+@media (min-width: 992px) {
+  .sock {
+    align-self: center;
+    width: 210px;
+    position: relative;
+    left: -40px;
+  }
+}
 .logo-arrow {
   display: flexbox;
   justify-content: center;
@@ -400,59 +496,6 @@ $txt-input-palette: (
   .logo-arrow i {
     font-size: 34px;
     bottom: 7px;
-  }
-}
-
-.menus {
-  display: flex;
-  width: 100%;
-  max-width: 640px;
-  margin: auto;
-  height: auto;
-  flex-direction: column;
-  padding: 30px 5% 58px 5%;
-  position: relative;
-  top: 220px;
-  background-color: #F6F6F6;
-  border-radius: 36px 36px 0 0;
-}
-.menus__titles {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menus__titles h1 {
-  width: auto;
-  font-family: "Shrikhand";
-  font-size: 1.45em;
-  font-weight: 500;
-  padding: 6px 1.6%;
-}
-.menus__titles i {
-  font-size: 1.7em;
-  padding-right: 5.87%;
-  /* 22px; */
-}
-@media (min-width: 430px) {
-  .menus {
-    top: 260px;
-  }
-}
-@media (min-width: 500px) {
-  .menus {
-    top: 300px;
-  }
-}
-@media (min-width: 590px) {
-  .menus {
-    top: 340px;
-  }
-}
-@media (min-width: 640px) {
-  .menus {
-    top: 20px;
-    margin-bottom: -180px;
-    border-radius: 36px 36px;
   }
 }
 

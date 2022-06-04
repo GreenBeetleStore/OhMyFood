@@ -1,0 +1,27 @@
+// Rubrique des Restaurants
+.restaurants{
+    &__container{
+        @include column;
+        align-items: center;
+        width: 100%;
+    }
+    @media (min-width: 992px){
+        display: flex;
+        width: 100%;
+        max-width: 1600px;
+        & h2{
+            align-self: center;
+            margin-bottom: 50px;
+        }
+        &__container{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 42px;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto 40px auto;
+        }
+    }
+}

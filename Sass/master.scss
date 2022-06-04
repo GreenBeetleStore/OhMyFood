@@ -3,14 +3,16 @@
 // @import "./utils/functions";
 // @import "./utils/extensions";
 @import "./base/base";
+@import "./base/menus";
 @import "./base/typography";
 @import "./layout/logo";
 @import "./layout/maps";
 @import "./layout/intro";
+@import "./layout/operative";
 @import "./layout/sections";
+@import "./layout/restaurants";
 @import "./layout/footer"; 
 @import "./layout/logo-arrow";
-@import "./layout/menus";
 @import "./components/dishes";
 @import "./components/dish";
 @import "./components/cover";

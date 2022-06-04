@@ -10,35 +10,51 @@
     background-color: $basecolor;
     margin: 0 auto 12px auto;
     @include box-shadow ($shadow);
-    &__name, h3{
-        font-size: 0.95em;
-        font-weight: 500;
-        letter-spacing: -0.5px;
-        margin: 16px 6px 0px 6px;
-        & p{
-            font-size: 0.85em;
+    &__name{ 
+        width: 380px;
+        h3{
+            font-size: 0.95em;
+            font-weight: 500;
+            letter-spacing: -0.85px;
+            margin: 16px 0px 0px 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        p{
+            font-size: 0.75em;
             font-weight: 300;
-            padding: 0px 6px 10px 6px;
+            letter-spacing: -0.03em;
+            padding: 0px 0px 10px 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
     &__price{
+        font-size: 0.95em;
+        font-weight: 500;
+        letter-spacing: -0.5px;
         position: relative;
-        right: -42px;
-        bottom: 16px;
+        right: 0px;
+        bottom: 8px;
+        margin: 0 24px;
     }
     & i{display: none;}
-    &:hover{
+    &__booking{
+        transform: scaleX(0);
+    }
+    &:active{
         & > .dish__booking{
             display: flex;
             align-self: flex-end;
             justify-content: center;
             align-items: center;
-            width: 59px;
+            min-width: 59px;
             height: 69px;
             border-radius: 0 14px 14px 0;
             background-color: $tertiarycolor;
-            margin-left: 48px;
-            margin-right: -2px;
+            margin-right: 0px;
             & > .check, i{
                 display: flex;
                 align-self: center;
@@ -50,6 +66,15 @@
                 color: $tertiarycolor;
                 background-color: $basecolor;
             }
+            transform-origin: right;
+            transform: scaleX(1);
+            transition: transform 600ms;
+        }
+        & > .dish__name{;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 }
+    

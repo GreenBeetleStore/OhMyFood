@@ -633,5 +633,9 @@ $txt-input-palette: (
 .btn--gradient {
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
 }
+.btn:hover {
+  background: linear-gradient(-5deg, #a06be1, #ff94e1);
+  box-shadow: 6px 6px 6px #c7c7c7;
+}
 
 /*# sourceMappingURL=styles.css.map */

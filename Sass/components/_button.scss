@@ -14,4 +14,8 @@
     &--gradient{
         @include gradient-btn;
     }
+    &:hover{
+        @include lighten-btn;
+        box-shadow: 6px 6px 6px #c7c7c7;
+    }
 }

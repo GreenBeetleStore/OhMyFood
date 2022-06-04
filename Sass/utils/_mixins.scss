@@ -18,6 +18,10 @@
     background: linear-gradient(-5deg, $primarycolor, $secondarycolor);
 }
 
+@mixin lighten-btn{
+    background: linear-gradient(-5deg, #a06be1, #ff94e1);
+}
+
 // Flex-Direction: Column;
 @mixin column{
     display: flex;

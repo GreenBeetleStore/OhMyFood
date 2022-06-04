@@ -1,0 +1,55 @@
+// Bouton pour réserver des plats
+.dish{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 600px;
+    height: 68px;
+    border-radius: 14px;
+    background-color: $basecolor;
+    margin: 0 auto 12px auto;
+    @include box-shadow ($shadow);
+    &__name, h3{
+        font-size: 0.95em;
+        font-weight: 500;
+        letter-spacing: -0.5px;
+        margin: 16px 6px 0px 6px;
+        & p{
+            font-size: 0.85em;
+            font-weight: 300;
+            padding: 0px 6px 10px 6px;
+        }
+    }
+    &__price{
+        position: relative;
+        right: -42px;
+        bottom: 16px;
+    }
+    & i{display: none;}
+    &:hover{
+        & > .dish__booking{
+            display: flex;
+            align-self: flex-end;
+            justify-content: center;
+            align-items: center;
+            width: 59px;
+            height: 69px;
+            border-radius: 0 14px 14px 0;
+            background-color: $tertiarycolor;
+            margin-left: 48px;
+            margin-right: -2px;
+            & > .check, i{
+                display: flex;
+                align-self: center;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                font-size: 0.95em;
+                padding: 2px 0 0 2px;
+                color: $tertiarycolor;
+                background-color: $basecolor;
+            }
+        }
+    }
+}

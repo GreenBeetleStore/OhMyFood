@@ -142,6 +142,23 @@ $txt-input-palette: (
     border-radius: 36px 36px;
   }
 }
+@media (min-width: 1290px) {
+  .menus {
+    width: 96%;
+    max-width: 1600px;
+  }
+  .menus > .blackboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .menus > .blackboard .main-dishes {
+    width: 30%;
+    height: auto;
+  }
+}
 
 .headers {
   font-size: 1.2rem;
@@ -580,11 +597,11 @@ $txt-input-palette: (
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  max-width: 600px;
+  max-width: 480px;
   height: 68px;
   border-radius: 14px;
   background-color: #FFFFFF;
-  margin: 0 auto 12px auto;
+  margin: 12px auto 12px auto;
   box-shadow: 5px 5px 5px #D4D4D4;
 }
 .dish__name {
@@ -600,7 +617,7 @@ $txt-input-palette: (
   overflow: hidden;
 }
 .dish__name p {
-  font-size: 0.75em;
+  font-size: 0.78em;
   font-weight: 300;
   letter-spacing: -0.03em;
   padding: 0px 0px 10px 8px;
@@ -653,13 +670,49 @@ $txt-input-palette: (
   text-overflow: ellipsis;
   overflow: hidden;
 }
+@media (min-width: 992px) {
+  .dish:hover > .dish__booking {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    min-width: 59px;
+    height: 69px;
+    border-radius: 0 14px 14px 0;
+    background-color: #99E2D0;
+    margin-right: 0px;
+    transform-origin: right;
+    transform: scaleX(1);
+    transition: transform 500ms ease-in-out;
+  }
+  .dish:hover > .dish__booking > .check, .dish:hover > .dish__booking i {
+    display: flex;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 0.95em;
+    padding: 2px 0 0 2px;
+    color: #99E2D0;
+    background-color: #FFFFFF;
+  }
+  .dish:hover > .dish__name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}
 
 .cover {
   position: absolute;
+  width: 100%;
   max-width: 1600px;
 }
 .cover img {
+  width: 100%;
   max-width: 640px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (min-width: 640px) {
   .cover {
@@ -686,10 +739,14 @@ $txt-input-palette: (
   padding: 14px 50px;
   border: none;
   margin-top: 30px;
+  text-decoration: none;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
   box-shadow: 5px 5px 5px #D4D4D4;
+}
+.btn a {
+  color: #FFFFFF;
 }
 .btn--rounded {
   border-radius: 25px;

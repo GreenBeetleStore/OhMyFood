@@ -6,6 +6,10 @@
     padding: 14px 50px;
     border: none;
     margin-top: 30px;
+    text-decoration: none;
+    & a{
+        color: $basecolor
+    }
     @include typography;
     @include box-shadow($shadow);
     &--rounded{

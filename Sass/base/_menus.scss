@@ -76,4 +76,19 @@
         margin-bottom: -180px;
         border-radius: 36px 36px;
     }
+    @media (min-width: 1290px){
+        width: 96%;
+        max-width: 1600px;
+        & > .blackboard{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            .main-dishes{
+                width: 30%;
+                height: auto;
+            }
+        }
+    }
 }

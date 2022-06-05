@@ -10,6 +10,12 @@
     background-color: $basecolor;
     margin: 12px auto 12px auto;
     @include box-shadow ($shadow);
+    // transform: scale(0);
+    & a{
+        transform-origin: top;
+        transform: scale(1);
+        transition: transform 1000ms ease-in-out;
+    }
     &__name{ 
         width: 380px;
         h3{
@@ -20,6 +26,10 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            @media (min-width: 992px){
+                font-size: 1.1em;
+                margin-left: 18px;
+            }
         }
         p{
             font-size: 0.78em;
@@ -29,6 +39,10 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            @media (min-width: 992px){
+                font-size: 0.93em;
+                margin-left: 12px;
+            }
         }
     }
     &__price{
@@ -39,6 +53,10 @@
         right: 0px;
         bottom: 8px;
         margin: 0 24px;
+        @media (min-width: 992px){
+            font-size: 1.1em;
+            bottom: 12px;
+        }
     }
     & i{display: none;}
     &__booking{
@@ -111,4 +129,3 @@
         }
     }
 }
-    

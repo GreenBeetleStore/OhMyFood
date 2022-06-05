@@ -22,4 +22,7 @@
         @include lighten-btn;
         box-shadow: 6px 6px 6px #c7c7c7;
     }
+    @media (min-width: 992px){
+            font-size: 1.1em;
+    }
 }

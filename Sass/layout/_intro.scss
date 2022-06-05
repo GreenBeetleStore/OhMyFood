@@ -14,10 +14,16 @@
         font-weight: 800;
         line-height: 115%;
         margin-bottom: 12px;
+        @media (min-width: 992px){
+            font-size: 1.4em;
+        }
     }
     p{
         font-size: 0.85em;
         line-height: 120%;
+        @media (min-width: 992px){
+            font-size: 1.1em;
+        }
     }
     .btn{
         width: auto;
@@ -32,6 +38,9 @@
         }
         &--gradient{
             @include gradient-btn;
+        }
+        @media (min-width: 992px){
+            font-size: 1.1em;
         }
     }
 }

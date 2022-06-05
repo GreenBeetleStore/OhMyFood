@@ -1,8 +1,9 @@
 .operative{
     @media (min-width: 992px){
         & h2{
-            position: relative;
-            left: 145px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }

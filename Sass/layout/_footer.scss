@@ -26,6 +26,9 @@
             max-width: 600px;
             text-align: left;
             align-self: flex-start;
+            @media (min-width: 992px){
+                font-size: 1.2em;
+            }
         }
         & ul.feedback{
             list-style: none;
@@ -38,18 +41,33 @@
                 color: $basecolor;
                 line-height: 1.7;
                 letter-spacing: 0.1px;
+                @media (min-width: 992px){
+                    font-size: 1em;
+                }
                 i{
                     width: 25px;
                     font-size: 1em;
+                    @media (min-width: 992px){
+                        width: 28px;
+                        font-size: 1.2em;
+                    }
                 }
             }
         }
     }
-@media (min-width: 992px){
+@media (min-width: 640px){
+    .footer{
+        display: flex;
+        justify-content: center;
+        padding-left: 47.5%;
+        padding-right: 50%;
+        margin: auto;
+    }
     .sock{
         align-self: center;
         width: 210px;
         position: relative;
-        left: -40px;
+        left: -58px;
+        margin: auto;
     }
 }

@@ -8,16 +8,20 @@
     max-width: 1600px;
     background-color: $mapscolor;
     box-shadow: 0 5px 5px $shadow inset;
-    // gap: 20px;
     &__btn{
         display: flex;
         justify-content: center;
         padding: 10px 0;
+        @media (min-width: 992px){
+            padding: 12px 0;
+        }
         & i{
             font-size: 1em;
             align-self: center;
             padding-bottom: 5px;
-            // margin-right: 20px;
+            @media (min-width: 992px){
+                font-size: 1.2em;
+            }
         }
         & input{
             width: 70%;
@@ -27,6 +31,9 @@
             border: none;
             font-size: 0.9em;
             font-weight: 500;
+            @media (min-width: 992px){
+                font-size: 1.1em;
+            }
         }
     }
 }

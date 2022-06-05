@@ -5,6 +5,7 @@
 }
 // Section Fonctionnement
 .operative{ 
+    justify-content: center;
     align-items: center;
     padding: 52px 5.5% 62px 5.5%;
     max-width: 640px;
@@ -12,6 +13,14 @@
     & h2{
         align-self: flex-start;
         margin-left: 1%;
+        @media (min-width: 992px){
+            font-size: 1.4em;
+        }
+    }
+    & p{
+        @media (min-width: 992px){
+            font-size: 1.25em;
+        }
     }
 }
 .howto{
@@ -39,18 +48,29 @@
         position: absolute;
         left: -12px;
         @include typography;
+        @media (min-width: 992px){
+            font-size: 1em;
+            width: 28px;
+            height: 28px;
+        }
     }
     &__step__byline{
         @include inline;
         i{
             font-size: 22px;
             color: $iconcolor;
+            @media (min-width: 992px){
+                font-size: 28px;
+            }
         }
         &--bg{
             @include inline;
             i{
                 font-size: 22px;
                 color: $primarycolor;
+                @media (min-width: 992px){
+                    font-size: 28px;
+                }
             }
         }
     }
@@ -66,6 +86,12 @@
     & h2{
         align-self: flex-start;
         margin-left: 1%;
+        @media (min-width: 992px){
+            font-size: 1.6em;
+        }
+    }
+    @media (min-width: 640px){
+        margin-bottom: -40px;
     }
 }
 .card{
@@ -75,9 +101,13 @@
     position: relative;
     width: 100%;
     max-width: 420px;
-    height: auto; /* 252px; */
+    height: auto; 
     background-color: $basecolor;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    @media (min-width: 1240px){
+        max-width: 500px;
+        height: 340px;
+    }
     & a{
         text-decoration: none;
         color: black;
@@ -88,6 +118,9 @@
         border-radius: 20px 20px 0 0;
         object-fit: cover;
         object-position: bottom ;
+        @media (min-width: 1240px){
+            height: 254px;
+        }
     }
     &__new-btn{
         display: flex;
@@ -103,6 +136,21 @@
         position: absolute;
         top: 13px;
         right: 12px;
+        @media (min-width: 992px){
+            font-size: 0.9em;
+            padding-top: 3px;
+        }
+        @media (min-width: 1240px){
+            width: 86px;
+            height: 34px;
+            font-size: 1em;
+            top: 22px;
+            right: 22px;
+            p{
+                align-self: center;
+                padding-right: 14px;
+            }
+        }
     }&__like{
         display: flex;
         justify-content: space-between;
@@ -122,12 +170,33 @@
     h3{
         font-size: 1em;
         font-weight: 700;
+        @media (min-width: 992px){
+            font-size: 1.15em;
+        }
+        @media (min-width: 1240px){
+            font-size: 1.2em;
+            margin-left: 14px;
+        }
     }
     p{
         font-size: 0.93em;
+        @media (min-width: 992px){
+            font-size: 1em;
+        }
+        @media (min-width: 1240px){
+            font-size: 1.1em;
+            margin-left: 14px;
+        }
     }
     & i{
         font-size: 24px;
+        @media (min-width: 992px){
+            font-size: 28px;
+        }
+        @media (min-width: 1240px){
+            font-size: 32px;
+            margin-right: 12px;
+        }
     }
     &__like{
         & :active {
@@ -137,8 +206,8 @@
                 }
                 & img{
                     display: flex;
-                    width: 32px;
-                    height: 32px;
+                    width: 28px;
+                    height: 28px;
                     transform: scale(0.1);
                 }
                 transform: scale(10);

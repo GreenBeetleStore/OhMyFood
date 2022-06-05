@@ -2,7 +2,7 @@
 .menus{
     display: flex;
     width: 100%;
-    max-width: 640px;
+    max-width: 1600px;
     margin: auto;
     height: auto;
     flex-direction: column;
@@ -21,10 +21,16 @@
             font-size: 1.45em;
             font-weight: 500;
             padding: 6px 1.6%;
+            @media (min-width: 992px){
+                font-size: 1.8em;
+            }
         }
         & i{
             font-size: 1.7em;
             padding-right: 5.87%; /* 22px; */
+            @media (min-width: 992px){
+                font-size: 2em;
+            }
         }
         & img{
             display: none;
@@ -64,21 +70,85 @@
     }
     @media (min-width: 430px) {
         top: 260px;
+        margin-bottom: 40px;
+    }
+    @media (min-width: 465px) {
+        top: 280px;
+        margin-bottom: 60px;
     }
     @media (min-width: 500px) {
         top: 300px;
+        margin-bottom: 80px;
+    }
+    @media (min-width: 545px) {
+        top: 320px;
+        margin-bottom: 100px;
     }
     @media (min-width: 590px) {
         top: 340px;
+        margin-bottom: 120px;
+    }
+    @media (min-width: 615px) {
+        top: 360px;
+        margin-bottom: 140px;
     }
     @media (min-width: 640px) {
-        top: 20px;
-        margin-bottom: -180px;
-        border-radius: 36px 36px;
+        top: 380px;
+        margin-bottom: 160px;
+        padding-left: 17.5%;
+        padding-right: 17.5%;
     }
-    @media (min-width: 1290px){
-        width: 96%;
+    @media (min-width: 680px) {
+        top: 415px;
+        margin-bottom: 185px;
+    }
+    @media (min-width: 720px) {
+        top: 450px;
+        margin-bottom: 230px;
+    }
+    @media (min-width: 770px) {
+        top: 485px;
+        margin-bottom: 265px;
+    }
+    @media (min-width: 820px) {
+        top: 520px;
+        margin-bottom: 300px;
+    }
+    @media (min-width: 870px) {
+        top: 550px;
+        margin-bottom: 330px;
+    }
+    @media (min-width: 920px) {
+        top: 580px;
+        margin-bottom: 360px;
+    }
+    @media (min-width: 970px) {
+        top: 615px;
+        margin-bottom: 395px;
+    }
+    @media (min-width: 1020px) {
+        top: 650px;
+        margin-bottom: 430px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    @media (min-width: 1080px) {
+        top: 685px;
+        margin-bottom: 465px;
+    }
+    @media (min-width: 1140px) {
+        top: 720px;
+        margin-bottom: 500px;
+    }
+    @media (min-width: 1215px) {
+        top: 765px;
+        margin-bottom: 545px;
+    }
+    @media (min-width: 1240px){
+        width: 100%;
         max-width: 1600px;
+        padding-left: 5%;
+        padding-right: 5%;
         & > .blackboard{
             display: flex;
             flex-direction: row;

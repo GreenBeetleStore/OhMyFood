@@ -26,6 +26,41 @@
             font-size: 1.7em;
             padding-right: 5.87%; /* 22px; */
         }
+        & img{
+            display: none;
+        }
+        & :active {
+            & > .heart{
+                & i{
+                    display: none;
+                }
+                & img{
+                    display: flex;
+                    width: 32px;
+                    height: 32px;
+                    transform: scale(0.1);
+                }
+                transform: scale(10);
+                transition: transform 500ms;
+            }
+        }
+        @media (min-width: 640px){
+            & :hover {
+                & > .heart{
+                    & i{
+                        display: none;
+                    }
+                    & img{
+                        display: flex;
+                        width: 36px;
+                        height: 36px;
+                        transform: scale(0.1);
+                    }
+                    transform: scale(10);
+                    transition: transform 500ms;
+                }
+            }
+        }
     }
     @media (min-width: 430px) {
         top: 260px;

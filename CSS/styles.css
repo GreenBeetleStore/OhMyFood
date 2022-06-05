@@ -89,6 +89,37 @@ $txt-input-palette: (
   padding-right: 5.87%;
   /* 22px; */
 }
+.menus__titles img {
+  display: none;
+}
+.menus__titles :active > .heart {
+  transform: scale(10);
+  transition: transform 500ms;
+}
+.menus__titles :active > .heart i {
+  display: none;
+}
+.menus__titles :active > .heart img {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  transform: scale(0.1);
+}
+@media (min-width: 640px) {
+  .menus__titles :hover > .heart {
+    transform: scale(10);
+    transition: transform 500ms;
+  }
+  .menus__titles :hover > .heart i {
+    display: none;
+  }
+  .menus__titles :hover > .heart img {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.1);
+  }
+}
 @media (min-width: 430px) {
   .menus {
     top: 260px;
@@ -109,94 +140,6 @@ $txt-input-palette: (
     top: 20px;
     margin-bottom: -180px;
     border-radius: 36px 36px;
-  }
-}
-
-.logo {
-  width: 100%;
-  max-width: 992px;
-  justify-content: center;
-}
-.logo img {
-  width: 44.25%;
-  height: auto;
-  margin: 22px auto 12px auto;
-}
-
-.maps {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  max-width: 1600px;
-  background-color: #EAEAEA;
-  box-shadow: 0 5px 5px #D4D4D4 inset;
-}
-.maps__btn {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-}
-.maps__btn i {
-  font-size: 1em;
-  align-self: center;
-  padding-bottom: 5px;
-}
-.maps__btn input {
-  width: 70%;
-  text-align: center;
-  max-width: 100%;
-  background-color: #EAEAEA;
-  border: none;
-  font-size: 0.9em;
-  font-weight: 500;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  background-color: #F6F6F6;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  padding: 40px 20px 50px 20px;
-  text-align: center;
-}
-.intro h1 {
-  width: 72%;
-  font-size: 1.25em;
-  font-weight: 800;
-  line-height: 115%;
-  margin-bottom: 12px;
-}
-.intro p {
-  font-size: 0.85em;
-  line-height: 120%;
-}
-.intro .btn {
-  width: auto;
-  height: auto;
-  padding: 14px 24px;
-  border: none;
-  margin-top: 30px;
-  color: #FFFFFF;
-  font-size: 0.85em;
-  font-weight: 500;
-  box-shadow: 5px 5px 5px #D4D4D4;
-}
-.intro .btn--rounded {
-  border-radius: 25px;
-}
-.intro .btn--gradient {
-  background: linear-gradient(-5deg, #9356DC, #FF79DA);
-}
-
-@media (min-width: 992px) {
-  .operative h2 {
-    position: relative;
-    left: 145px;
   }
 }
 
@@ -371,13 +314,121 @@ $txt-input-palette: (
 .card i {
   font-size: 24px;
 }
-.card:hover .heart i {
+.card__like :active > .heart {
+  transform: scale(10);
+  transition: transform 500ms;
+}
+.card__like :active > .heart i {
   display: none;
 }
-.card:hover .heart img {
+.card__like :active > .heart img {
   display: flex;
-  width: 31px;
-  height: 29px;
+  width: 32px;
+  height: 32px;
+  transform: scale(0.1);
+}
+@media (min-width: 640px) {
+  .card__like :hover > .heart {
+    transform: scale(10);
+    transition: transform 500ms;
+  }
+  .card__like :hover > .heart i {
+    display: none;
+  }
+  .card__like :hover > .heart img {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.1);
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 992px;
+  justify-content: center;
+}
+.logo img {
+  width: 44.25%;
+  height: auto;
+  margin: 22px auto 12px auto;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  max-width: 1600px;
+  background-color: #EAEAEA;
+  box-shadow: 0 5px 5px #D4D4D4 inset;
+}
+.maps__btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.maps__btn i {
+  font-size: 1em;
+  align-self: center;
+  padding-bottom: 5px;
+}
+.maps__btn input {
+  width: 70%;
+  text-align: center;
+  max-width: 100%;
+  background-color: #EAEAEA;
+  border: none;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 40px 20px 50px 20px;
+  text-align: center;
+}
+.intro h1 {
+  width: 72%;
+  font-size: 1.25em;
+  font-weight: 800;
+  line-height: 115%;
+  margin-bottom: 12px;
+}
+.intro p {
+  font-size: 0.85em;
+  line-height: 120%;
+}
+.intro .btn {
+  width: auto;
+  height: auto;
+  padding: 14px 24px;
+  border: none;
+  margin-top: 30px;
+  color: #FFFFFF;
+  font-size: 0.85em;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px #D4D4D4;
+}
+.intro .btn--rounded {
+  border-radius: 25px;
+}
+.intro .btn--gradient {
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
+}
+
+@media (min-width: 992px) {
+  .operative h2 {
+    position: relative;
+    left: 145px;
+  }
 }
 
 .restaurants__container {
@@ -582,7 +633,7 @@ $txt-input-palette: (
   margin-right: 0px;
   transform-origin: right;
   transform: scaleX(1);
-  transition: transform 600ms;
+  transition: transform 500ms ease-in-out;
 }
 .dish:active > .dish__booking > .check, .dish:active > .dish__booking i {
   display: flex;

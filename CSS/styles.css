@@ -870,10 +870,8 @@ $txt-input-palette: (
   background-color: #FFFFFF;
   margin: 12px auto 12px auto;
   box-shadow: 5px 5px 5px #D4D4D4;
-}
-.dish a {
   transform-origin: top;
-  transform: scale(1);
+  transform: translateY(50%) scale(1);
   transition: transform 1000ms ease-in-out;
 }
 .dish__name {
@@ -890,8 +888,14 @@ $txt-input-palette: (
 }
 @media (min-width: 992px) {
   .dish__name h3 {
-    font-size: 1.1em;
+    font-size: 1em;
     margin-left: 18px;
+    letter-spacing: -1.2px;
+  }
+}
+@media (min-width: 1340px) {
+  .dish__name h3 {
+    font-size: 1.1em;
   }
 }
 .dish__name p {
@@ -905,8 +909,16 @@ $txt-input-palette: (
 }
 @media (min-width: 992px) {
   .dish__name p {
-    font-size: 0.93em;
+    font-size: 0.8em;
     margin-left: 12px;
+    letter-spacing: -1.1px;
+  }
+}
+@media (min-width: 1340px) {
+  .dish__name p {
+    font-size: 0.9em;
+    margin-left: 12px;
+    letter-spacing: -0.7px;
   }
 }
 .dish__price {

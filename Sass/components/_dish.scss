@@ -10,12 +10,12 @@
     background-color: $basecolor;
     margin: 12px auto 12px auto;
     @include box-shadow ($shadow);
-    // transform: scale(0);
-    & a{
+
+        
         transform-origin: top;
-        transform: scale(1);
+        transform: translateY(50%) scale(1);
         transition: transform 1000ms ease-in-out;
-    }
+    
     &__name{ 
         width: 380px;
         h3{
@@ -27,8 +27,12 @@
             text-overflow: ellipsis;
             overflow: hidden;
             @media (min-width: 992px){
-                font-size: 1.1em;
+                font-size: 1em;
                 margin-left: 18px;
+                letter-spacing: -1.2px;
+            }
+            @media (min-width: 1340px){
+                font-size: 1.1em;
             }
         }
         p{
@@ -40,8 +44,14 @@
             text-overflow: ellipsis;
             overflow: hidden;
             @media (min-width: 992px){
-                font-size: 0.93em;
+                font-size: 0.8em;
                 margin-left: 12px;
+                letter-spacing: -1.1px;
+            }
+            @media (min-width: 1340px){
+                font-size: 0.9em;
+                margin-left: 12px;
+                letter-spacing: -0.7px;
             }
         }
     }

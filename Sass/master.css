@@ -874,9 +874,6 @@ $txt-input-palette: (
   background-color: #FFFFFF;
   margin: 12px auto 12px auto;
   box-shadow: 5px 5px 5px #D4D4D4;
-  transform-origin: top;
-  transform: translateY(50%) scale(1);
-  transition: transform 1000ms ease-in-out;
 }
 .dish__name {
   width: 380px;

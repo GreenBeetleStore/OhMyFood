@@ -12,9 +12,9 @@
     @include box-shadow ($shadow);
 
         
-        transform-origin: top;
-        transform: translateY(50%) scale(1);
-        transition: transform 1000ms ease-in-out;
+        // transform-origin: top;
+        // transform: translateY(50%) scale(1);
+        // transition: transform 1000ms ease-in-out;
     
     &__name{ 
         width: 380px;

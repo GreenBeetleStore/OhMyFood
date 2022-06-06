@@ -100,35 +100,15 @@ $txt-input-palette: (
   }
 }
 .menus__titles img {
-  display: none;
-}
-.menus__titles :active > .heart {
-  transform: scale(10);
-  transition: transform 500ms;
-}
-.menus__titles :active > .heart i {
-  display: none;
-}
-.menus__titles :active > .heart img {
-  display: flex;
-  width: 32px;
+  width: 0px;
   height: 32px;
-  transform: scale(0.1);
+  transition: width 1000ms ease-in-out;
 }
-@media (min-width: 640px) {
-  .menus__titles :hover > .heart {
-    transform: scale(10);
-    transition: transform 500ms;
-  }
-  .menus__titles :hover > .heart i {
-    display: none;
-  }
-  .menus__titles :hover > .heart img {
-    display: flex;
-    width: 36px;
-    height: 36px;
-    transform: scale(0.1);
-  }
+.menus__titles :hover > .heart i {
+  display: none;
+}
+.menus__titles :hover > .heart img {
+  width: 32px;
 }
 @media (min-width: 430px) {
   .menus {
@@ -941,7 +921,7 @@ $txt-input-palette: (
   display: none;
 }
 .dish__booking {
-  transform: scaleX(0);
+  width: 0%;
 }
 .dish:active > .dish__booking {
   display: flex;
@@ -953,9 +933,8 @@ $txt-input-palette: (
   border-radius: 0 14px 14px 0;
   background-color: #99E2D0;
   margin-right: 0px;
-  transform-origin: right;
-  transform: scaleX(1);
-  transition: transform 500ms ease-in-out;
+  width: 16%;
+  transition: width 1000ms ease-in-out;
 }
 .dish:active > .dish__booking > .check, .dish:active > .dish__booking i {
   display: flex;
@@ -979,14 +958,14 @@ $txt-input-palette: (
     align-self: flex-end;
     justify-content: center;
     align-items: center;
-    min-width: 59px;
+    width: 16%;
+    overflow: hidden;
     height: 69px;
     border-radius: 0 14px 14px 0;
     background-color: #99E2D0;
     margin-right: 0px;
-    transform-origin: right;
-    transform: scaleX(1);
-    transition: transform 500ms ease-in-out;
+    width: 16%;
+    transition: width 1000ms ease-in-out;
   }
   .dish:hover > .dish__booking > .check, .dish:hover > .dish__booking i {
     display: flex;

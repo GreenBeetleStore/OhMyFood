@@ -33,40 +33,27 @@
             }
         }
         & img{
-            display: none;
+            // display: none;
+            width: 0px;
+            height: 32px;
+            transition: width 1000ms ease-in-out;
         }
-        & :active {
+        & :hover {
             & > .heart{
                 & i{
                     display: none;
                 }
                 & img{
-                    display: flex;
+                    // display: initial;
                     width: 32px;
-                    height: 32px;
-                    transform: scale(0.1);
+                    // height: 32px;
+                    // transform: scale(0.1);
                 }
-                transform: scale(10);
-                transition: transform 500ms;
+                // transform: scale(10);
+                // transition: width 1000ms ease-in-out;
             }
         }
-        @media (min-width: 640px){
-            & :hover {
-                & > .heart{
-                    & i{
-                        display: none;
-                    }
-                    & img{
-                        display: flex;
-                        width: 36px;
-                        height: 36px;
-                        transform: scale(0.1);
-                    }
-                    transform: scale(10);
-                    transition: transform 500ms;
-                }
-            }
-        }
+        
     }
     @media (min-width: 430px) {
         top: 260px;

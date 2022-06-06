@@ -70,7 +70,8 @@
     }
     & i{display: none;}
     &__booking{
-        transform: scaleX(0);
+        width: 0%;
+        // transform: scaleX(0);
     }
     &:active{
         & > .dish__booking{
@@ -94,9 +95,10 @@
                 color: $tertiarycolor;
                 background-color: $basecolor;
             }
-            transform-origin: right;
-            transform: scaleX(1);
-            transition: transform 500ms ease-in-out;
+            // transform-origin: right;
+            width: 16%;
+            // transform: translate(0, 0) scaleX(1);
+            transition: width 1000ms ease-in-out;
         }
         & > .dish__name{;
             white-space: nowrap;
@@ -111,7 +113,9 @@
                 align-self: flex-end;
                 justify-content: center;
                 align-items: center;
-                min-width: 59px;
+                width: 16%;
+                overflow: hidden;
+                // min-width: 59px;
                 height: 69px;
                 border-radius: 0 14px 14px 0;
                 background-color: $tertiarycolor;
@@ -127,9 +131,10 @@
                     color: $tertiarycolor;
                     background-color: $basecolor;
                 }
-                transform-origin: right;
-                transform: scaleX(1);
-                transition: transform 500ms ease-in-out;
+                // transform-origin: right;
+            width: 16%;
+            // transform: translate(0, 0) scaleX(1);
+            transition: width 1000ms ease-in-out;
             }
             & > .dish__name{;
                 white-space: nowrap;

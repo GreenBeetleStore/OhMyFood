@@ -11,6 +11,9 @@
 // Rounded Button Shape
 @mixin round-btn{
     border-radius: 25px;
+    @media (min-width: 992px){
+        border-radius: 30px;
+    } 
 }
 
 // Button Color Gradient

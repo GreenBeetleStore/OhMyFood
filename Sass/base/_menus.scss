@@ -33,28 +33,25 @@
             }
         }
         & img{
-            // display: none;
-            width: 0px;
-            height: 32px;
-            transition: width 1000ms ease-in-out;
+            display: none;
         }
         & :hover {
             & > .heart{
                 & i{
                     display: none;
                 }
-                & img{
-                    // display: initial;
-                    width: 32px;
-                    // height: 32px;
-                    // transform: scale(0.1);
-                }
-                // transform: scale(10);
-                // transition: width 1000ms ease-in-out;
-            }
+                img{
+                    transition: width 600ms ease-in-out;
+                    display: initial;
+                    width: 33px;
+                    @media (min-width: 992px){
+                        width: 38px;
+                    }
+                }   
+            }   
         }
-        
     }
+    // Media Queries Adaptation of header image and footer position
     @media (min-width: 430px) {
         top: 260px;
         margin-bottom: 40px;

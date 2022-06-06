@@ -10,12 +10,9 @@
     background-color: $basecolor;
     margin: 12px auto 12px auto;
     @include box-shadow ($shadow);
-
-        
-        // transform-origin: top;
-        // transform: translateY(50%) scale(1);
-        // transition: transform 1000ms ease-in-out;
-    
+    @media (min-width: 992px){
+        height: 72px;
+    }    
     &__name{ 
         width: 380px;
         h3{
@@ -44,7 +41,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             @media (min-width: 992px){
-                font-size: 0.8em;
+                font-size: 0.85em;
                 margin-left: 12px;
                 letter-spacing: -1.1px;
             }
@@ -64,83 +61,113 @@
         bottom: 8px;
         margin: 0 24px;
         @media (min-width: 992px){
-            font-size: 1.1em;
+            font-size: 1em;
             bottom: 12px;
         }
     }
     & i{display: none;}
     &__booking{
         width: 0%;
-        // transform: scaleX(0);
     }
-    &:active{
+    &:hover{
         & > .dish__booking{
             display: flex;
             align-self: flex-end;
             justify-content: center;
             align-items: center;
-            min-width: 59px;
+            min-width: 0px;
             height: 69px;
             border-radius: 0 14px 14px 0;
             background-color: $tertiarycolor;
             margin-right: 0px;
+            @media (min-width: 992px){
+                height: 72px;
+            } 
             & > .check, i{
                 display: flex;
                 align-self: center;
                 width: 22px;
                 height: 22px;
-                border-radius: 50%;
-                font-size: 0.95em;
-                padding: 2px 0 0 2px;
+                border-radius: 11px;
+                padding: 6px 0 0 4px;
+                font-size: 0.9em;
                 color: $tertiarycolor;
                 background-color: $basecolor;
+                rotate: 180deg;
+                transition: rotate 600ms ease-in-out;
+                overflow: hidden;
             }
-            // transform-origin: right;
-            width: 16%;
-            // transform: translate(0, 0) scaleX(1);
-            transition: width 1000ms ease-in-out;
+            width: 30%;
+            transition: width 600ms ease-in-out;
+            // Media Queries Adaptation of buttons check
+            @media (min-width: 390px){
+                width: 28%;
+            }
+            @media (min-width: 410px){
+                width: 27%;
+            }
+            @media (min-width: 430px){
+                width: 26%;
+            }
+            @media (min-width: 440px){
+                width: 25%;
+            }
+            @media (min-width: 450px){
+                width: 24%;
+            }
+            @media (min-width: 460px){
+                width: 23%;
+            }
+            @media (min-width: 470px){
+                width: 22%;
+            }
+            @media (min-width: 480px){
+                width: 21%;
+            }
+            @media (min-width: 490px){
+                width: 20%;
+            }
+            @media (min-width: 500px){
+                width: 19%;
+            }
+            @media (min-width: 510px){
+                width: 18%;
+            }
+            @media (min-width: 520px){
+                width: 17%;
+            }
+            @media (min-width: 530px){
+                width: 16%;
+            }
+            @media (min-width: 1240px){
+                width: 35%;
+            }
+            @media (min-width: 1290px){
+                width: 32.5%;
+            }
+            @media (min-width: 1340px){
+                width: 30%;
+            }
+            @media (min-width: 1390px){
+                width: 28%;
+            }
+            @media (min-width: 1440px){
+                width: 26%;
+            }
+            @media (min-width: 1490px){
+                width: 24%;
+            }
+            @media (min-width: 1540px){
+                width: 23%;
+            }
+            @media (min-width: 1600px){
+                width: 21%;
+            }
         }
         & > .dish__name{;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-        }
-    }
-    @media (min-width: 992px){
-        &:hover{
-            & > .dish__booking{
-                display: flex;
-                align-self: flex-end;
-                justify-content: center;
-                align-items: center;
-                width: 16%;
-                overflow: hidden;
-                // min-width: 59px;
-                height: 69px;
-                border-radius: 0 14px 14px 0;
-                background-color: $tertiarycolor;
-                margin-right: 0px;
-                & > .check, i{
-                    display: flex;
-                    align-self: center;
-                    width: 22px;
-                    height: 22px;
-                    border-radius: 50%;
-                    font-size: 0.95em;
-                    padding: 2px 0 0 2px;
-                    color: $tertiarycolor;
-                    background-color: $basecolor;
-                }
-                // transform-origin: right;
-            width: 16%;
-            // transform: translate(0, 0) scaleX(1);
-            transition: width 1000ms ease-in-out;
-            }
-            & > .dish__name{;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-            }
         }
     }
 }

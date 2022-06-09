@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@keyframes appearheart {
+  0% {
+    transform: scaleY(0) scaleX(0);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+.card__like :hover > .heart i {
+  display: none;
+}
+.card__like :hover > .heart img {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  width: 100%;
+  overflow: hidden;
+  animation: appearheart 750ms ease-in-out;
+}
+@media (min-width: 992px) {
+  .card__like :hover > .heart img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1240px) {
+  .card__like :hover > .heart img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+}
+
 @keyframes ticks {
   0% {
     transform: scaleY(0) scaleX(0);
@@ -8,20 +41,20 @@
   }
 }
 .main-dishes {
-  animation: ticks 725ms backwards ease-in-out;
+  animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 995ms;
+  animation-delay: 1595ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 2170ms;
+  animation-delay: 1255ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 2775ms;
+  animation-delay: 1710ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -97,23 +130,22 @@
 }
 .menus__titles img {
   display: none;
-  opacity: 0%;
 }
-.menus__titles :hover > .heart i {
+.menus__titles:hover i {
   display: none;
 }
-.menus__titles :hover > .heart img {
-  display: initial;
-  width: 32px;
-  opacity: 100%;
+.menus__titles:hover img {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  animation: appearheart 750ms ease-in-out;
 }
 @media (min-width: 992px) {
-  .menus__titles :hover > .heart img {
-    width: 34px;
+  .menus__titles:hover img {
+    width: 38px;
+    height: 38px;
   }
-}
-.menus__titles > .heart img {
-  transition: opacity 600ms ease-in-out;
 }
 @media (min-width: 430px) {
   .menus {
@@ -247,6 +279,14 @@
   }
 }
 
+@keyframes appearheart {
+  0% {
+    transform: scaleY(0) scaleX(0);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
 .headers {
   font-size: 1.2rem;
   font-weight: 700;
@@ -526,29 +566,6 @@
 }
 .card__like.heart img {
   width: 0%;
-}
-.card__like :hover > .heart i {
-  display: none;
-}
-.card__like :hover > .heart img {
-  display: initial;
-  width: 28px;
-  height: 28px;
-  width: 100%;
-  transition: width 600ms ease-in-out;
-}
-@media (min-width: 992px) {
-  .card__like :hover > .heart img {
-    width: 30px;
-    height: 30px;
-  }
-}
-@media (min-width: 1240px) {
-  .card__like :hover > .heart img {
-    width: 32px;
-    height: 32px;
-    margin-right: 12px;
-  }
 }
 
 .logo {

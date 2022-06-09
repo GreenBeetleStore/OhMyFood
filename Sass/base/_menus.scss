@@ -34,26 +34,23 @@
         }
         & img{
             display: none;
-            opacity: 0%;
         }
-        & :hover {
-            & > .heart{
-                & i{
-                    display: none;
+        &:hover {
+            & i{
+                display: none;
+            }
+            img{
+                display: flex;
+                width: 34px;
+                height: 34px;
+                overflow: hidden;
+                animation: appearheart 750ms ease-in-out;
+                @media (min-width: 992px){
+                    width: 38px;
+                    height: 38px;
                 }
-                img{
-                    display: initial;
-                    width: 32px;
-                    opacity: 100%;
-                    @media (min-width: 992px){
-                        width: 34px;
-                    }
-                }   
-            }   
-        }
-        & > .heart img{
-            transition: opacity 600ms ease-in-out;
-        }
+            }
+        }   
     }
 
     // Media Queries Adaptation of header image and footer position
@@ -149,5 +146,13 @@
                 height: auto;
             }
         }
+    }
+}
+@keyframes appearheart{
+    0%{
+        transform: scaleY(0) scaleX(0);
+    }
+    100%{
+        transform: scaleY(1.0) scaleX(1.0);
     }
 }

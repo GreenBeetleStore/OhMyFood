@@ -1,0 +1,55 @@
+// Progressive appearance of the degraded heart
+@keyframes appearheart{
+    0%{
+        transform: scaleY(0) scaleX(0);
+    }
+    100%{
+        transform: scaleY(1.0) scaleX(1.0);
+    }
+}
+.card__like {
+    & :hover {
+        & > .heart{
+            & i{
+                display: none;
+            }
+            & img{
+                display: flex;
+                width: 28px;
+                height: 28px;
+                width: 100%;
+                overflow: hidden;
+                @media (min-width: 992px){
+                    width: 30px;
+                    height: 30px;
+                }
+                @media (min-width: 1240px){
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 12px;
+                }  
+                animation: appearheart 750ms ease-in-out;
+            }
+        }
+    }
+}
+
+// .menus{
+//     &__titles {
+//         & :hover {
+//             & > .heart{
+//                 & i{
+//                     display: none;
+//                 }
+//                 & img{
+//                     display: flex;
+//                     width: 32px;
+//                     height: 32px;
+//                     width: 100%;
+//                     overflow: hidden;
+//                 }
+//                 animation: appearheart 750ms ease-in-out;
+//             }
+//         }
+//     }
+// }

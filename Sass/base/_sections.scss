@@ -202,6 +202,9 @@
                 margin-right: 12px;
             }
         }
+        &.heart img{
+            width: 0%;
+        }
         & :hover {
             & > .heart{
                 & i{
@@ -211,17 +214,17 @@
                     display: initial;
                     width: 28px;
                     height: 28px;
-                    
+                    width: 100%;
                     @media (min-width: 992px){
                         width: 30px;
                         height: 30px;
                     }
                     @media (min-width: 1240px){
-                        width: 34px;
-                        height: 34px;
+                        width: 32px;
+                        height: 32px;
                         margin-right: 12px;
                     }
-                    transition: width 600ms ease-in-out;
+                    transition: width 600ms ease-in-out;   
                 }
             }
         }

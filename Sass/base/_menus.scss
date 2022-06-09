@@ -26,7 +26,7 @@
             }
         }
         & i{
-            font-size: 1.7em;
+            font-size: 1.75em;
             padding-right: 5.87%; /* 22px; */
             @media (min-width: 992px){
                 font-size: 2em;
@@ -34,6 +34,7 @@
         }
         & img{
             display: none;
+            opacity: 0%;
         }
         & :hover {
             & > .heart{
@@ -41,16 +42,20 @@
                     display: none;
                 }
                 img{
-                    transition: width 600ms ease-in-out;
                     display: initial;
-                    width: 33px;
+                    width: 32px;
+                    opacity: 100%;
                     @media (min-width: 992px){
-                        width: 38px;
+                        width: 34px;
                     }
                 }   
             }   
         }
+        & > .heart img{
+            transition: opacity 600ms ease-in-out;
+        }
     }
+
     // Media Queries Adaptation of header image and footer position
     @media (min-width: 430px) {
         top: 260px;

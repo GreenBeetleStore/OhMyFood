@@ -1,0 +1,20 @@
+// Animation: Appearance Menu
+@keyframes ticks{
+    0%{
+        transform: scaleY(0) scaleX(0);
+    }
+    100%{
+        transform: scaleY(1.0) scaleX(1.0);
+    }
+}
+
+.main-dishes{
+    animation: ticks $menus-time backwards ease-in-out;   
+    @for $i from 1 through $num-dish {
+        &--#{$i} {
+            animation-delay: $menus-delay * $i + random(100)*15ms;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+    }
+}

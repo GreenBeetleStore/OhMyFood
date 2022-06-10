@@ -44,17 +44,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 1595ms;
+  animation-delay: 1580ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1255ms;
+  animation-delay: 1495ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1710ms;
+  animation-delay: 1320ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -973,6 +973,8 @@
   margin-right: 0px;
   width: 30%;
   transition: width 600ms ease-in-out;
+  -webkit-transition: width 600ms ease-in-out;
+  -o-transition: width 600ms ease-in-out;
 }
 @media (min-width: 992px) {
   .dish:hover > .dish__booking {
@@ -992,9 +994,11 @@
   font-size: 0.9em;
   color: #99E2D0;
   background-color: #FFFFFF;
+  overflow: hidden;
   rotate: 360deg;
   transition: rotate 600ms ease-in-out;
-  overflow: hidden;
+  -webkit-transition: rotate 600ms ease-in-out;
+  -o-transition: rotate 600ms ease-in-out;
 }
 @media (min-width: 390px) {
   .dish:hover > .dish__booking {

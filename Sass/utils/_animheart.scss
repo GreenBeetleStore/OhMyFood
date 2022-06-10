@@ -29,6 +29,9 @@
                     margin-right: 12px;
                 }  
                 animation: appearheart 750ms ease-in-out;
+                -o-animation: appearheart 750ms ease-in-out;
+                -moz-animation: appearheart 750ms ease-in-out;
+                -webkit-animation: appearheart 750ms ease-in-out;
             }
         }
     }

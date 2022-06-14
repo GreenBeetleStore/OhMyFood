@@ -47,17 +47,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 365ms;
+  animation-delay: 395ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 655ms;
+  animation-delay: 295ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 600ms;
+  animation-delay: 1755ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1185,6 +1185,7 @@
   display: flex;
   width: 100%;
   min-height: 120vh;
+  /* Insertar media queries per l'imatge de fons */
 }
 
 @keyframes rotate {
@@ -1196,9 +1197,11 @@
   }
 }
 .loader {
-  margin: 12% auto;
+  margin: 20% auto;
   perspective: 2500px;
   perspective-origin: 0px -1000px;
+  /* Insertar media queries per:
+      margin: xx% auto; */
 }
 .loader .gallery {
   width: 160px;

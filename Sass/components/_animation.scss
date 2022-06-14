@@ -113,103 +113,103 @@
             background-repeat: no-repeat;
             background-position: 50% 50%;
             &--rest1{
-                background-image: url("images/rest1-160.jpg");
+                background-image: url("/images/rest1-160.jpg");
                 transform: translateZ(80px);
                 @media (min-width: 640px){
-                    background-image: url("images/rest1-200.jpg");
+                    background-image: url("/images/rest1-200.jpg");
                     transform: translateZ(100px);
                 }
                 @media (min-width: 992px){
-                    background-image: url("images/rest1-250.jpg");
+                    background-image: url("/images/rest1-250.jpg");
                     transform: translateZ(125px);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("images/rest1.jpg");
+                    background-image: url("/images/rest1.jpg");
                     transform: translateZ(150px);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("images/rest1-350.jpg");
+                    background-image: url("/images/rest1-350.jpg");
                     transform: translateZ(175px);
                 }
             }
             &--rest2{
-                background-image: url("images/rest2-160.jpg");
+                background-image: url("/images/rest2-160.jpg");
                 transform: translateX(80px) rotateY(90deg);
                 @media (min-width: 640px){
-                    background-image: url("images/rest2-200.jpg");
+                    background-image: url("/images/rest2-200.jpg");
                     transform: translateX(100px) rotateY(90deg);
                 }
                 @media (min-width: 992px){
-                    background-image: url("images/rest2-250.jpg");
+                    background-image: url("/images/rest2-250.jpg");
                     transform: translateX(125px) rotateY(90deg);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("images/rest2.jpg");
+                    background-image: url("/images/rest2.jpg");
                     transform: translateX(150px) rotateY(90deg);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("images/rest2-350.jpg");
+                    background-image: url("/images/rest2-350.jpg");
                     transform: translateX(175px) rotateY(90deg);
                 }
             }
             &--rest3{
-                background-image: url("images/rest3-160.jpg");
+                background-image: url("/images/rest3-160.jpg");
                 transform: translateZ(-80px);
                 @media (min-width: 640px){
-                    background-image: url("images/rest3-200.jpg");
+                    background-image: url("/images/rest3-200.jpg");
                     transform: translateZ(-100px);
                 }
                 @media (min-width: 992px){
-                    background-image: url("images/rest3-250.jpg");
+                    background-image: url("/images/rest3-250.jpg");
                     transform: translateZ(-125px);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("images/rest3.jpg");
+                    background-image: url("/images/rest3.jpg");
                     transform: translateZ(-150px);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("images/rest3-350.jpg");
+                    background-image: url("/images/rest3-350.jpg");
                     transform: translateZ(-175px);
                 }
             }
             &--rest4{
-                background-image: url("images/rest4-160.jpg");
+                background-image: url("/images/rest4-160.jpg");
                 transform: translateX(-80px) rotateY(90deg);
                 @media (min-width: 640px){
-                    background-image: url("images/rest4-200.jpg");
+                    background-image: url("/images/rest4-200.jpg");
                     transform: translateX(-100px) rotateY(90deg);
                 }
                 @media (min-width: 992px){
-                    background-image: url("images/rest4-250.jpg");
+                    background-image: url("/images/rest4-250.jpg");
                     transform: translateX(-125px) rotateY(90deg);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("images/rest4.jpg");
+                    background-image: url("/images/rest4.jpg");
                     transform: translateX(-150px) rotateY(90deg);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("images/rest4-350.jpg");
+                    background-image: url("/images/rest4-350.jpg");
                     transform: translateX(-175px) rotateY(90deg);
                 }
             }
             &--omf{
                 background-color: $primarycolor;
-                background-image: url("images/omf-160.png");
+                background-image: url("/images/omf-160.png");
                 transform: translateY(-80px) rotateX(90deg);
                 @media (min-width: 640px){
-                    background-image: url("images/omf-200.png");
+                    background-image: url("/images/omf-200.png");
                     transform: translateY(-100px) rotateX(90deg);
                 }
                 @media (min-width: 992px){
-                    background-image: url("images/omf.png");
+                    background-image: url("/images/omf.png");
                     transform: translateY(-125px) rotateX(90deg);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("images/omf-300.png");
+                    background-image: url("/images/omf-300.png");
                     transform: translateY(-150px) rotateX(90deg);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("images/omf-350.png");
+                    background-image: url("/images/omf-350.png");
                     transform: translateY(-175px) rotateX(90deg);
                 }
             }

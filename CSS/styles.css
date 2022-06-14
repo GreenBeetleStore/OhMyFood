@@ -47,17 +47,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 1610ms;
+  animation-delay: 1115ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1555ms;
+  animation-delay: 775ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1005ms;
+  animation-delay: 1200ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1199,7 +1199,7 @@
 #spinner {
   margin: 0 auto;
   box-sizing: border-box;
-  background-image: url("images/bgd.png");
+  background-image: url("/images/bgd.png");
   background-repeat: no-repeat;
   background-position: 50% 1%;
   display: flex;
@@ -1217,47 +1217,47 @@
 }
 @media (min-width: 440px) {
   #spinner {
-    background-image: url("images/bgd-540.png");
+    background-image: url("/images/bgd-540.png");
   }
 }
 @media (min-width: 540px) {
   #spinner {
-    background-image: url("images/bgd-640.png");
+    background-image: url("/images/bgd-640.png");
   }
 }
 @media (min-width: 640px) {
   #spinner {
-    background-image: url("images/bgd-780.png");
+    background-image: url("/images/bgd-780.png");
   }
 }
 @media (min-width: 780px) {
   #spinner {
-    background-image: url("images/bgd-880.png");
+    background-image: url("/images/bgd-880.png");
   }
 }
 @media (min-width: 880px) {
   #spinner {
-    background-image: url("images/bgd-992.png");
+    background-image: url("/images/bgd-992.png");
   }
 }
 @media (min-width: 992px) {
   #spinner {
-    background-image: url("images/bgd-1180.png");
+    background-image: url("/images/bgd-1180.png");
   }
 }
 @media (min-width: 1180px) {
   #spinner {
-    background-image: url("images/bgd-1320.png");
+    background-image: url("/images/bgd-1320.png");
   }
 }
 @media (min-width: 1320px) {
   #spinner {
-    background-image: url("images/bgd-1440.png");
+    background-image: url("/images/bgd-1440.png");
   }
 }
 @media (min-width: 1440px) {
   #spinner {
-    background-image: url("images/bgd-1600.png");
+    background-image: url("/images/bgd-1600.png");
   }
 }
 

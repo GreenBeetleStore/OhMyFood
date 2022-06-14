@@ -47,17 +47,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 830ms;
+  animation-delay: 740ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1075ms;
+  animation-delay: 865ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1650ms;
+  animation-delay: 1425ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1179,12 +1179,18 @@
 @keyframes scale {
   0% {
     transform: scale(0%);
+    opacity: 1;
     -ms-transform: scale(0%);
     -moz-transform: scale(0%);
     -webkit-transform: scale(0%);
   }
+  99% {
+    transform: scale(99%);
+    opacity: 1;
+  }
   100% {
     transform: scale(100%);
+    opacity: 0;
     -ms-transform: scale(100%);
     -moz-transform: scale(100%);
     -webkit-transform: scale(100%);
@@ -1193,14 +1199,17 @@
 #spinner {
   margin: 0 auto;
   box-sizing: border-box;
-  background-image: url("./images/bgd.png");
+  background-image: url("images/bgd.png");
   background-repeat: no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 1%;
   display: flex;
   width: 100%;
   height: 100%;
-  min-height: 120vh;
+  min-height: 160vh;
+  position: absolute;
+  z-index: 2;
   transform: scale(100%);
+  opacity: 0;
   -ms-transform: scale(100%);
   -moz-transform: scale(100%);
   -webkit-transform: scale(100%);
@@ -1208,47 +1217,47 @@
 }
 @media (min-width: 440px) {
   #spinner {
-    background-image: url("/images/bgd-540.png");
+    background-image: url("images/bgd-540.png");
   }
 }
 @media (min-width: 540px) {
   #spinner {
-    background-image: url("/images/bgd-640.png");
+    background-image: url("images/bgd-640.png");
   }
 }
 @media (min-width: 640px) {
   #spinner {
-    background-image: url("/images/bgd-780.png");
+    background-image: url("images/bgd-780.png");
   }
 }
 @media (min-width: 780px) {
   #spinner {
-    background-image: url("/images/bgd-880.png");
+    background-image: url("images/bgd-880.png");
   }
 }
 @media (min-width: 880px) {
   #spinner {
-    background-image: url("/images/bgd-992.png");
+    background-image: url("images/bgd-992.png");
   }
 }
 @media (min-width: 992px) {
   #spinner {
-    background-image: url("/images/bgd-1180.png");
+    background-image: url("images/bgd-1180.png");
   }
 }
 @media (min-width: 1180px) {
   #spinner {
-    background-image: url("/images/bgd-1320.png");
+    background-image: url("images/bgd-1320.png");
   }
 }
 @media (min-width: 1320px) {
   #spinner {
-    background-image: url("/images/bgd-1440.png");
+    background-image: url("images/bgd-1440.png");
   }
 }
 @media (min-width: 1440px) {
   #spinner {
-    background-image: url("/images/bgd-1600.png");
+    background-image: url("images/bgd-1600.png");
   }
 }
 
@@ -1267,7 +1276,7 @@
   }
 }
 .loader {
-  margin: 30% auto;
+  margin: 12% auto;
   perspective: 2500px;
   perspective-origin: 0px -1000px;
 }
@@ -1311,143 +1320,143 @@
   background-position: 50% 50%;
 }
 .loader .gallery > .gallery__3d--rest1 {
-  background-image: url("/images/rest1-160.jpg");
+  background-image: url("images/rest1-160.jpg");
   transform: translateZ(80px);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("/images/rest1-200.jpg");
+    background-image: url("images/rest1-200.jpg");
     transform: translateZ(100px);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("/images/rest1-250.jpg");
+    background-image: url("images/rest1-250.jpg");
     transform: translateZ(125px);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("/images/rest1.jpg");
+    background-image: url("images/rest1.jpg");
     transform: translateZ(150px);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("/images/rest1-350.jpg");
+    background-image: url("images/rest1-350.jpg");
     transform: translateZ(175px);
   }
 }
 .loader .gallery > .gallery__3d--rest2 {
-  background-image: url("/images/rest2-160.jpg");
+  background-image: url("images/rest2-160.jpg");
   transform: translateX(80px) rotateY(90deg);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("/images/rest2-200.jpg");
+    background-image: url("images/rest2-200.jpg");
     transform: translateX(100px) rotateY(90deg);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("/images/rest2-250.jpg");
+    background-image: url("images/rest2-250.jpg");
     transform: translateX(125px) rotateY(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("/images/rest2.jpg");
+    background-image: url("images/rest2.jpg");
     transform: translateX(150px) rotateY(90deg);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("/images/rest2-350.jpg");
+    background-image: url("images/rest2-350.jpg");
     transform: translateX(175px) rotateY(90deg);
   }
 }
 .loader .gallery > .gallery__3d--rest3 {
-  background-image: url("/images/rest3-160.jpg");
+  background-image: url("images/rest3-160.jpg");
   transform: translateZ(-80px);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("/images/rest3-200.jpg");
+    background-image: url("images/rest3-200.jpg");
     transform: translateZ(-100px);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("/images/rest3-250.jpg");
+    background-image: url("images/rest3-250.jpg");
     transform: translateZ(-125px);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("/images/rest3.jpg");
+    background-image: url("images/rest3.jpg");
     transform: translateZ(-150px);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("/images/rest3-350.jpg");
+    background-image: url("images/rest3-350.jpg");
     transform: translateZ(-175px);
   }
 }
 .loader .gallery > .gallery__3d--rest4 {
-  background-image: url("/images/rest4-160.jpg");
+  background-image: url("images/rest4-160.jpg");
   transform: translateX(-80px) rotateY(90deg);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("/images/rest4-200.jpg");
+    background-image: url("images/rest4-200.jpg");
     transform: translateX(-100px) rotateY(90deg);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("/images/rest4-250.jpg");
+    background-image: url("images/rest4-250.jpg");
     transform: translateX(-125px) rotateY(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("/images/rest4.jpg");
+    background-image: url("images/rest4.jpg");
     transform: translateX(-150px) rotateY(90deg);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("/images/rest4-350.jpg");
+    background-image: url("images/rest4-350.jpg");
     transform: translateX(-175px) rotateY(90deg);
   }
 }
 .loader .gallery > .gallery__3d--omf {
   background-color: #9356DC;
-  background-image: url("/images/omf-160.png");
+  background-image: url("images/omf-160.png");
   transform: translateY(-80px) rotateX(90deg);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf-200.png");
+    background-image: url("images/omf-200.png");
     transform: translateY(-100px) rotateX(90deg);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf.png");
+    background-image: url("images/omf.png");
     transform: translateY(-125px) rotateX(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf-300.png");
+    background-image: url("images/omf-300.png");
     transform: translateY(-150px) rotateX(90deg);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf-350.png");
+    background-image: url("images/omf-350.png");
     transform: translateY(-175px) rotateX(90deg);
   }
 }

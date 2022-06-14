@@ -1,0 +1,159 @@
+// Animation "Loading Spinner"
+#spinner {
+    margin: 0;
+    box-sizing: border-box;
+    // background-image: url("./images/bgd.png");
+    // background-repeat: no-repeat;
+    // background-position: 50% 10%;
+    display: flex;
+    width: 100%;
+    min-height: 120vh;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(45deg);
+    }
+    100%{ 
+        transform: rotateY(405deg);
+    }
+}
+
+.loader {
+    margin: 10% auto;
+    perspective: 2500px;
+    perspective-origin: 0px -1000px;
+
+    .gallery{
+        width: 160px;
+        height: 160px;
+        position: relative;
+        transform: rotateY(45deg);
+        transform-style: preserve-3d;
+        animation: rotate 3000ms linear;
+        @media (min-width: 640px){
+            width: 200px; 
+            height: 200px;
+        }
+        @media (min-width: 992px){
+            width: 250px;
+            height: 250px;
+        }
+        @media (min-width: 1240px){
+            width: 300px;
+            height: 300px;
+        }
+        @media (min-width: 1440px){
+            width: 350px;
+            height: 350px;
+        }
+        
+        & > .gallery__3d{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            &--rest1{
+                background-image: url("images/rest1-160.jpg");
+                transform: translateZ(80px);
+                @media (min-width: 640px){
+                    background-image: url("./images/rest1-200.jpg");
+                    transform: translateZ(100px);
+                }
+                @media (min-width: 992px){
+                    background-image: url("./images/rest1-250.jpg");
+                    transform: translateZ(125px);
+                }
+                @media (min-width: 1240px){
+                    background-image: url("./images/rest1.jpg");
+                    transform: translateZ(150px);
+                }
+                @media (min-width: 1440px){
+                    background-image: url("./images/rest1-350.jpg");
+                    transform: translateZ(175px);
+                }
+            }
+            &--rest2{
+                background-image: url("./images/rest2-160.jpg");
+                transform: translateX(80px) rotateY(90deg);
+                @media (min-width: 640px){
+                    background-image: url("./images/rest2-200.jpg");
+                    transform: translateX(100px) rotateY(90deg);
+                }
+                @media (min-width: 992px){
+                    background-image: url("./images/rest2-250.jpg");
+                    transform: translateX(125px) rotateY(90deg);
+                }
+                @media (min-width: 1240px){
+                    background-image: url("./images/rest2.jpg");
+                    transform: translateX(150px) rotateY(90deg);
+                }
+                @media (min-width: 1440px){
+                    background-image: url("./images/rest2-350.jpg");
+                    transform: translateX(175px) rotateY(90deg);
+                }
+            }
+            &--rest3{
+                background-image: url("./images/rest3-160.jpg");
+                transform: translateZ(-80px);
+                @media (min-width: 640px){
+                    background-image: url("./images/rest3-200.jpg");
+                    transform: translateZ(-100px);
+                }
+                @media (min-width: 992px){
+                    background-image: url("./images/rest3-250.jpg");
+                    transform: translateZ(-125px);
+                }
+                @media (min-width: 1240px){
+                    background-image: url("./images/rest3.jpg");
+                    transform: translateZ(-150px);
+                }
+                @media (min-width: 1440px){
+                    background-image: url("./images/rest3-350.jpg");
+                    transform: translateZ(-175px);
+                }
+            }
+            &--rest4{
+                background-image: url("./images/rest4-160.jpg");
+                transform: translateX(-80px) rotateY(90deg);
+                @media (min-width: 640px){
+                    background-image: url("./images/rest4-200.jpg");
+                    transform: translateX(-100px) rotateY(90deg);
+                }
+                @media (min-width: 992px){
+                    background-image: url("./images/rest4-250.jpg");
+                    transform: translateX(-125px) rotateY(90deg);
+                }
+                @media (min-width: 1240px){
+                    background-image: url("./images/rest4.jpg");
+                    transform: translateX(-150px) rotateY(90deg);
+                }
+                @media (min-width: 1440px){
+                    background-image: url("./images/rest4-350.jpg");
+                    transform: translateX(-175px) rotateY(90deg);
+                }
+            }
+            &--omf{
+                background-color: $primarycolor;
+                background-image: url("./images/omf-160.png");
+                transform: translateY(-80px) rotateX(90deg);
+                @media (min-width: 640px){
+                    background-image: url("./images/omf-200.png");
+                    transform: translateY(-100px) rotateX(90deg);
+                }
+                @media (min-width: 992px){
+                    background-image: url("./images/omf.png");
+                    transform: translateY(-125px) rotateX(90deg);
+                }
+                @media (min-width: 1240px){
+                    background-image: url("./images/omf-300.png");
+                    transform: translateY(-150px) rotateX(90deg);
+                }
+                @media (min-width: 1440px){
+                    background-image: url("./images/omf-350.png");
+                    transform: translateY(-175px) rotateX(90deg);
+                }
+            }
+        }
+    }
+}

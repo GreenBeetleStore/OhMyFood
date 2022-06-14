@@ -47,17 +47,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 1040ms;
+  animation-delay: 875ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 490ms;
+  animation-delay: 445ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1755ms;
+  animation-delay: 1305ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -998,10 +998,10 @@
   color: #99E2D0;
   background-color: #FFFFFF;
   overflow: hidden;
-  rotate: 360deg;
-  transition: rotate 600ms ease-in-out;
-  -webkit-transition: rotate 600ms ease-in-out;
-  -o-transition: rotate 600ms ease-in-out;
+  transform: rotate(360deg);
+  transition: transform 600ms ease-in-out;
+  -webkit-transition: rotate(360deg) 600ms ease-in-out;
+  -o-transition: rotate(360deg) 600ms ease-in-out;
 }
 @media (min-width: 390px) {
   .dish:hover > .dish__booking {
@@ -1193,7 +1193,7 @@
 #spinner {
   margin: 0 auto;
   box-sizing: border-box;
-  background-image: url("../../images/bgd.png");
+  background-image: url("./images/bgd.png");
   background-repeat: no-repeat;
   background-position: 50% 10%;
   display: flex;
@@ -1208,7 +1208,7 @@
 }
 @media (min-width: 440px) {
   #spinner {
-    background-image: url("../../images/bgd-540.png");
+    background-image: url("./images/bgd-540.png");
   }
 }
 @media (min-width: 540px) {
@@ -1311,143 +1311,143 @@
   background-position: 50% 50%;
 }
 .loader .gallery > .gallery__3d--rest1 {
-  background-image: url("../../images/rest1-160.jpg");
+  background-image: url("/images/rest1-160.jpg");
   transform: translateZ(80px);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("../../images/rest1-200.jpg");
+    background-image: url("/images/rest1-200.jpg");
     transform: translateZ(100px);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("../../images/rest1-250.jpg");
+    background-image: url("/images/rest1-250.jpg");
     transform: translateZ(125px);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("../../images/rest1.jpg");
+    background-image: url("/images/rest1.jpg");
     transform: translateZ(150px);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest1 {
-    background-image: url("../../images/rest1-350.jpg");
+    background-image: url("/images/rest1-350.jpg");
     transform: translateZ(175px);
   }
 }
 .loader .gallery > .gallery__3d--rest2 {
-  background-image: url("../../images/rest2-160.jpg");
+  background-image: url("/images/rest2-160.jpg");
   transform: translateX(80px) rotateY(90deg);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("../../images/rest2-200.jpg");
+    background-image: url("/images/rest2-200.jpg");
     transform: translateX(100px) rotateY(90deg);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("../../images/rest2-250.jpg");
+    background-image: url("/images/rest2-250.jpg");
     transform: translateX(125px) rotateY(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("../../images/rest2.jpg");
+    background-image: url("/images/rest2.jpg");
     transform: translateX(150px) rotateY(90deg);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest2 {
-    background-image: url("../../images/rest2-350.jpg");
+    background-image: url("/images/rest2-350.jpg");
     transform: translateX(175px) rotateY(90deg);
   }
 }
 .loader .gallery > .gallery__3d--rest3 {
-  background-image: url("../../images/rest3-160.jpg");
+  background-image: url("/images/rest3-160.jpg");
   transform: translateZ(-80px);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("../../images/rest3-200.jpg");
+    background-image: url("/images/rest3-200.jpg");
     transform: translateZ(-100px);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("../../images/rest3-250.jpg");
+    background-image: url("/images/rest3-250.jpg");
     transform: translateZ(-125px);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("../../images/rest3.jpg");
+    background-image: url("/images/rest3.jpg");
     transform: translateZ(-150px);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest3 {
-    background-image: url("../../images/rest3-350.jpg");
+    background-image: url("/images/rest3-350.jpg");
     transform: translateZ(-175px);
   }
 }
 .loader .gallery > .gallery__3d--rest4 {
-  background-image: url("../../images/rest4-160.jpg");
+  background-image: url("/images/rest4-160.jpg");
   transform: translateX(-80px) rotateY(90deg);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("../../images/rest4-200.jpg");
+    background-image: url("/images/rest4-200.jpg");
     transform: translateX(-100px) rotateY(90deg);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("../../images/rest4-250.jpg");
+    background-image: url("/images/rest4-250.jpg");
     transform: translateX(-125px) rotateY(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("../../images/rest4.jpg");
+    background-image: url("/images/rest4.jpg");
     transform: translateX(-150px) rotateY(90deg);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--rest4 {
-    background-image: url("../../images/rest4-350.jpg");
+    background-image: url("/images/rest4-350.jpg");
     transform: translateX(-175px) rotateY(90deg);
   }
 }
 .loader .gallery > .gallery__3d--omf {
   background-color: #9356DC;
-  background-image: url("../../images/omf-160.png");
+  background-image: url("/images/omf-160.png");
   transform: translateY(-80px) rotateX(90deg);
 }
 @media (min-width: 640px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("../../images/omf-200.png");
+    background-image: url("/images/omf-200.png");
     transform: translateY(-100px) rotateX(90deg);
   }
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("../../images/omf.png");
+    background-image: url("/images/omf.png");
     transform: translateY(-125px) rotateX(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("../../images/omf-300.png");
+    background-image: url("/images/omf-300.png");
     transform: translateY(-150px) rotateX(90deg);
   }
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("../../images/omf-350.png");
+    background-image: url("/images/omf-350.png");
     transform: translateY(-175px) rotateX(90deg);
   }
 }

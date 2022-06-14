@@ -96,11 +96,12 @@
                 color: $tertiarycolor;
                 background-color: $basecolor;
                 overflow: hidden;
-                rotate: 360deg;
+                transform: rotate(360deg);
                 
-                transition: rotate 600ms ease-in-out;
-                -webkit-transition: rotate 600ms ease-in-out;
-                -o-transition: rotate 600ms ease-in-out;
+                
+                transition: transform  600ms ease-in-out;
+                -webkit-transition: rotate(360deg) 600ms ease-in-out;
+                -o-transition: rotate(360deg) 600ms ease-in-out;
             }
             width: 30%;
             transition: width 600ms ease-in-out;

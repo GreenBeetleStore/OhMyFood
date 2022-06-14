@@ -47,17 +47,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 395ms;
+  animation-delay: 1385ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 295ms;
+  animation-delay: 1555ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1755ms;
+  animation-delay: 1080ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1176,38 +1176,91 @@
   }
 }
 
+@keyframes scale {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
 #spinner {
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   background-image: url("../../images/bgd.png");
   background-repeat: no-repeat;
   background-position: 50% 10%;
   display: flex;
   width: 100%;
+  height: 100%;
   min-height: 120vh;
-  /* Insertar media queries per l'imatge de fons */
+  transform: scale(100%);
+  animation: scale 3000ms ease-in-out;
+}
+@media (min-width: 440px) {
+  #spinner {
+    background-image: url("../../images/bgd-540.png");
+  }
+}
+@media (min-width: 540px) {
+  #spinner {
+    background-image: url("../../images/bgd-640.png");
+  }
+}
+@media (min-width: 640px) {
+  #spinner {
+    background-image: url("../../images/bgd-780.png");
+  }
+}
+@media (min-width: 780px) {
+  #spinner {
+    background-image: url("../../images/bgd-880.png");
+  }
+}
+@media (min-width: 880px) {
+  #spinner {
+    background-image: url("../../images/bgd-992.png");
+  }
+}
+@media (min-width: 992px) {
+  #spinner {
+    background-image: url("../../images/bgd-1180.png");
+  }
+}
+@media (min-width: 1180px) {
+  #spinner {
+    background-image: url("../../images/bgd-1320.png");
+  }
+}
+@media (min-width: 1320px) {
+  #spinner {
+    background-image: url("../../images/bgd-1440.png");
+  }
+}
+@media (min-width: 1440px) {
+  #spinner {
+    background-image: url("../../images/bgd-1600.png");
+  }
 }
 
 @keyframes rotate {
   0% {
-    transform: rotateY(45deg);
+    transform: rotateY(45deg) scale(0%);
   }
   100% {
-    transform: rotateY(405deg);
+    transform: rotateY(405deg) scale(100%);
   }
 }
 .loader {
-  margin: 20% auto;
+  margin: 30% auto;
   perspective: 2500px;
   perspective-origin: 0px -1000px;
-  /* Insertar media queries per:
-      margin: xx% auto; */
 }
 .loader .gallery {
   width: 160px;
   height: 160px;
   position: relative;
-  transform: rotateY(45deg);
+  transform: rotateY(45deg) scale(100%);
   transform-style: preserve-3d;
   animation: rotate 3000ms linear;
 }

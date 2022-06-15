@@ -50,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 515ms;
+  animation-delay: 920ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1510ms;
+  animation-delay: 1120ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 945ms;
+  animation-delay: 555ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1240,22 +1240,22 @@
 }
 @media (min-width: 780px) {
   #spinner {
-    background-image: url("/images/bgd-880.png");
+    background-image: url("../../images/bgd-880.png");
   }
 }
 @media (min-width: 880px) {
   #spinner {
-    background-image: url("/images/bgd-992.png");
+    background-image: url(".././images/bgd-992.png");
   }
 }
 @media (min-width: 992px) {
   #spinner {
-    background-image: url("/images/bgd-1180.png");
+    background-image: url("../images/bgd-1180.png");
   }
 }
 @media (min-width: 1180px) {
   #spinner {
-    background-image: url("/images/bgd-1320.png");
+    background-image: url("./images/bgd-1320.png");
   }
 }
 @media (min-width: 1320px) {

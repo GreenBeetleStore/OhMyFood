@@ -55,12 +55,12 @@
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 670ms;
+  animation-delay: 1150ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 795ms;
+  animation-delay: 1080ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1209,7 +1209,7 @@
   position: absolute;
   margin: 0 auto;
   box-sizing: border-box;
-  background-image: url("/images/bgd.png");
+  background-image: url("../images/bgd.png");
   background-repeat: no-repeat;
   background-position: top;
   display: flex;

@@ -114,82 +114,82 @@
             background-repeat: no-repeat;
             background-position: 50% 50%;
             &--rest1{
-                background-image: url("../images/rest1-160.jpg");
+                background-image: url("../images/rest1-160.png");
                 transform: translateZ(80px);
                 @media (min-width: 640px){
-                    background-image: url("../images/rest1-200.jpg");
+                    background-image: url("../images/rest1-200.png");
                     transform: translateZ(100px);
                 }
                 @media (min-width: 992px){
-                    background-image: url("../images/rest1-250.jpg");
+                    background-image: url("../images/rest1-250.png");
                     transform: translateZ(125px);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("../images/rest1.jpg");
+                    background-image: url("../images/rest1.png");
                     transform: translateZ(150px);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("../images/rest1-350.jpg");
+                    background-image: url("../images/rest1-350.png");
                     transform: translateZ(175px);
                 }
             }
             &--rest2{
-                background-image: url("../images/rest2-160.jpg");
+                background-image: url("../images/rest2-160.png");
                 transform: translateX(80px) rotateY(90deg);
                 @media (min-width: 640px){
-                    background-image: url("../images/rest2-200.jpg");
+                    background-image: url("../images/rest2-200.png");
                     transform: translateX(100px) rotateY(90deg);
                 }
                 @media (min-width: 992px){
-                    background-image: url("../images/rest2-250.jpg");
+                    background-image: url("../images/rest2-250.png");
                     transform: translateX(125px) rotateY(90deg);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("../images/rest2.jpg");
+                    background-image: url("../images/rest2.png");
                     transform: translateX(150px) rotateY(90deg);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("../images/rest2-350.jpg");
+                    background-image: url("../images/rest2-350.png");
                     transform: translateX(175px) rotateY(90deg);
                 }
             }
             &--rest3{
-                background-image: url("../images/rest3-160.jpg");
+                background-image: url("../images/rest3-160.png");
                 transform: translateZ(-80px);
                 @media (min-width: 640px){
-                    background-image: url("../images/rest3-200.jpg");
+                    background-image: url("../images/rest3-200.png");
                     transform: translateZ(-100px);
                 }
                 @media (min-width: 992px){
-                    background-image: url("../images/rest3-250.jpg");
+                    background-image: url("../images/rest3-250.png");
                     transform: translateZ(-125px);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("../images/rest3.jpg");
+                    background-image: url("../images/rest3.png");
                     transform: translateZ(-150px);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("../images/rest3-350.jpg");
+                    background-image: url("../images/rest3-350.png");
                     transform: translateZ(-175px);
                 }
             }
             &--rest4{
-                background-image: url("../images/rest4-160.jpg");
+                background-image: url("../images/rest4-160.png");
                 transform: translateX(-80px) rotateY(90deg);
                 @media (min-width: 640px){
-                    background-image: url("../images/rest4-200.jpg");
+                    background-image: url("../images/rest4-200.png");
                     transform: translateX(-100px) rotateY(90deg);
                 }
                 @media (min-width: 992px){
-                    background-image: url("../images/rest4-250.jpg");
+                    background-image: url("../images/rest4-250.png");
                     transform: translateX(-125px) rotateY(90deg);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("../images/rest4.jpg");
+                    background-image: url("../images/rest4.png");
                     transform: translateX(-150px) rotateY(90deg);
                 }
                 @media (min-width: 1440px){
-                    background-image: url("../images/rest4-350.jpg");
+                    background-image: url("../images/rest4-350.png");
                     transform: translateX(-175px) rotateY(90deg);
                 }
             }

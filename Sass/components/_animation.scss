@@ -195,18 +195,18 @@
             }
             &--omf{
                 background-color: $primarycolor;
-                background-image: url("/images/omf-160.png");
+                background-image: url("./../images/omf-160.png");
                 transform: translateY(-80px) rotateX(90deg);
                 @media (min-width: 640px){
                     background-image: url("/images/omf-200.png");
                     transform: translateY(-100px) rotateX(90deg);
                 }
                 @media (min-width: 992px){
-                    background-image: url("/images/omf.png");
+                    background-image: url("images/omf.png");
                     transform: translateY(-125px) rotateX(90deg);
                 }
                 @media (min-width: 1240px){
-                    background-image: url("/images/omf-300.png");
+                    background-image: url("./images/omf-300.png");
                     transform: translateY(-150px) rotateX(90deg);
                 }
                 @media (min-width: 1440px){

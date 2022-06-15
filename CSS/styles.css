@@ -50,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 965ms;
+  animation-delay: 920ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 340ms;
+  animation-delay: 835ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1005ms;
+  animation-delay: 1110ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1441,7 +1441,7 @@
 }
 .loader .gallery > .gallery__3d--omf {
   background-color: #9356DC;
-  background-image: url("/images/omf-160.png");
+  background-image: url("./../images/omf-160.png");
   transform: translateY(-80px) rotateX(90deg);
 }
 @media (min-width: 640px) {
@@ -1452,13 +1452,13 @@
 }
 @media (min-width: 992px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf.png");
+    background-image: url("images/omf.png");
     transform: translateY(-125px) rotateX(90deg);
   }
 }
 @media (min-width: 1240px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf-300.png");
+    background-image: url("./images/omf-300.png");
     transform: translateY(-150px) rotateX(90deg);
   }
 }

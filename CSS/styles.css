@@ -50,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 1130ms;
+  animation-delay: 245ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1495ms;
+  animation-delay: 505ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 405ms;
+  animation-delay: 1785ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -142,8 +142,8 @@
 }
 .menus__titles:hover img {
   display: flex;
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   overflow: hidden;
   animation: appearheart 1000ms ease-in-out;
   -moz-animation: appearheart 1000ms ease-in-out;
@@ -151,8 +151,8 @@
 }
 @media (min-width: 992px) {
   .menus__titles:hover img {
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
   }
 }
 @media (min-width: 430px) {

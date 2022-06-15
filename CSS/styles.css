@@ -50,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 245ms;
+  animation-delay: 575ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 505ms;
+  animation-delay: 910ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1785ms;
+  animation-delay: 1725ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1265,7 +1265,7 @@
 }
 @media (min-width: 1440px) {
   #spinner {
-    background-image: url("/images/bgd-1600.png");
+    background-image: url("./images/bgd-1600.png");
   }
 }
 

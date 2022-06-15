@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @keyframes appearheart {
   0% {
-    transform: scaleY(0) scaleX(0);
+    transform: width 0%;
+    /* scaleY(0) scaleX(0); */
+    opacity: 0;
   }
   100% {
-    transform: scaleY(1) scaleX(1);
+    transform: width 100%;
+    /* scaleY(1.0) scaleX(1.0); */
+    opacity: 1%;
   }
 }
 .card__like :hover > .heart i {
@@ -16,10 +20,9 @@
   height: 28px;
   width: 100%;
   overflow: hidden;
-  animation: appearheart 750ms ease-in-out;
-  -o-animation: appearheart 750ms ease-in-out;
-  -moz-animation: appearheart 750ms ease-in-out;
-  -webkit-animation: appearheart 750ms ease-in-out;
+  animation: appearheart 1000ms ease-in-out;
+  -moz-animation: appearheart 1000ms ease-in-out;
+  -webkit-animation: appearheart 1000ms ease-in-out;
 }
 @media (min-width: 992px) {
   .card__like :hover > .heart img {
@@ -47,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 1115ms;
+  animation-delay: 950ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 775ms;
+  animation-delay: 1630ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1200ms;
+  animation-delay: 1215ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -142,7 +145,9 @@
   width: 34px;
   height: 34px;
   overflow: hidden;
-  animation: appearheart 750ms ease-in-out;
+  animation: appearheart 1000ms ease-in-out;
+  -moz-animation: appearheart 1000ms ease-in-out;
+  -webkit-animation: appearheart 1000ms ease-in-out;
 }
 @media (min-width: 992px) {
   .menus__titles:hover img {
@@ -284,10 +289,12 @@
 
 @keyframes appearheart {
   0% {
-    transform: scaleY(0) scaleX(0);
+    transform: width 0%;
+    opacity: 0;
   }
   100% {
-    transform: scaleY(1) scaleX(1);
+    transform: width 100%;
+    opacity: 1;
   }
 }
 .headers {
@@ -1180,6 +1187,7 @@
   0% {
     transform: scale(0%);
     opacity: 1;
+    z-index: 2;
     -ms-transform: scale(0%);
     -moz-transform: scale(0%);
     -webkit-transform: scale(0%);
@@ -1194,20 +1202,20 @@
     -ms-transform: scale(100%);
     -moz-transform: scale(100%);
     -webkit-transform: scale(100%);
+    z-index: 1;
   }
 }
 #spinner {
+  position: absolute;
   margin: 0 auto;
   box-sizing: border-box;
   background-image: url("/images/bgd.png");
   background-repeat: no-repeat;
-  background-position: 50% 1%;
+  background-position: top;
   display: flex;
   width: 100%;
   height: 100%;
   min-height: 160vh;
-  position: absolute;
-  z-index: 2;
   transform: scale(100%);
   opacity: 0;
   -ms-transform: scale(100%);

@@ -1,10 +1,12 @@
 // Progressive appearance of the degraded heart
 @keyframes appearheart{
     0%{
-        transform: scaleY(0) scaleX(0);
+        transform: width 0%;    /* scaleY(0) scaleX(0); */
+        opacity: 0;
     }
     100%{
-        transform: scaleY(1.0) scaleX(1.0);
+        transform: width 100%;  /* scaleY(1.0) scaleX(1.0); */
+        opacity: 1%;
     }
 }
 .card__like {
@@ -28,10 +30,9 @@
                     height: 32px;
                     margin-right: 12px;
                 }  
-                animation: appearheart 750ms ease-in-out;
-                -o-animation: appearheart 750ms ease-in-out;
-                -moz-animation: appearheart 750ms ease-in-out;
-                -webkit-animation: appearheart 750ms ease-in-out;
+                animation: appearheart 1000ms ease-in-out;
+                -moz-animation: appearheart 1000ms ease-in-out;
+                -webkit-animation: appearheart 1000ms ease-in-out;
             }
         }
     }

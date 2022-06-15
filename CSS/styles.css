@@ -50,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 920ms;
+  animation-delay: 965ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1120ms;
+  animation-delay: 340ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 555ms;
+  animation-delay: 1005ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1464,7 +1464,7 @@
 }
 @media (min-width: 1440px) {
   .loader .gallery > .gallery__3d--omf {
-    background-image: url("/images/omf-350.png");
+    background-image: url("../images/omf-350.png");
     transform: translateY(-175px) rotateX(90deg);
   }
 }

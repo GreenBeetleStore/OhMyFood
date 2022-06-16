@@ -50,17 +50,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 755ms;
+  animation-delay: 380ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 610ms;
+  animation-delay: 835ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 570ms;
+  animation-delay: 1740ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -1153,14 +1153,10 @@
   padding: 14px 50px;
   border: none;
   margin-top: 30px;
-  text-decoration: none;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
   box-shadow: 5px 5px 5px #D4D4D4;
-}
-.btn a {
-  color: #FFFFFF;
 }
 .btn--rounded {
   border-radius: 25px;
@@ -1181,6 +1177,11 @@
   .btn {
     font-size: 1.1em;
   }
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 @keyframes scale {

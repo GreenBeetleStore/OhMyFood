@@ -6,10 +6,6 @@
     padding: 14px 50px;
     border: none;
     margin-top: 30px;
-    text-decoration: none;
-    & a{
-        color: $basecolor
-    }
     @include typography;
     @include box-shadow($shadow);
     &--rounded{
@@ -25,4 +21,8 @@
     @media (min-width: 992px){
             font-size: 1.1em;
     }
+}
+a{
+    color: $basecolor;
+    text-decoration: none;
 }

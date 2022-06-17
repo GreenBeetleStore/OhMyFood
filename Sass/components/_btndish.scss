@@ -100,13 +100,9 @@
                 
                 
                 transition: transform  600ms ease-in-out;
-                -webkit-transition: rotate(360deg) 600ms ease-in-out;
-                -o-transition: rotate(360deg) 600ms ease-in-out;
             }
             width: 30%;
             transition: width 600ms ease-in-out;
-            -webkit-transition: width 600ms ease-in-out;
-            -o-transition: width 600ms ease-in-out;
             // Media Queries Adaptation of buttons check
             @media (min-width: 390px){
                 width: 28%;

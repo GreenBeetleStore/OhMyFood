@@ -1,49 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @-webkit-keyframes appearheart {
   0% {
-    transform: width 0%;
-    /* scaleY(0) scaleX(0); */
     opacity: 0;
   }
   100% {
-    transform: width 100%;
-    /* scaleY(1.0) scaleX(1.0); */
     opacity: 1%;
   }
 }
 @keyframes appearheart {
   0% {
-    transform: width 0%;
-    /* scaleY(0) scaleX(0); */
     opacity: 0;
   }
   100% {
-    transform: width 100%;
-    /* scaleY(1.0) scaleX(1.0); */
     opacity: 1%;
   }
 }
-.card__like :hover > .heart i {
+.card__like :hover i {
   display: none;
 }
-.card__like :hover > .heart img {
+.card__like :hover img {
   display: flex;
   width: 28px;
   height: 28px;
   width: 100%;
   overflow: hidden;
-  animation: appearheart 1000ms ease-in-out;
-  -moz-animation: appearheart 1000ms ease-in-out;
   -webkit-animation: appearheart 1000ms ease-in-out;
+          animation: appearheart 1000ms ease-in-out;
 }
 @media (min-width: 992px) {
-  .card__like :hover > .heart img {
+  .card__like :hover img {
     width: 30px;
     height: 30px;
   }
 }
 @media (min-width: 1240px) {
-  .card__like :hover > .heart img {
+  .card__like :hover img {
     width: 32px;
     height: 32px;
     margin-right: 12px;
@@ -72,24 +63,24 @@
           animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  -webkit-animation-delay: 335ms;
-          animation-delay: 335ms;
+  -webkit-animation-delay: 665ms;
+          animation-delay: 665ms;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  -webkit-animation-delay: 295ms;
-          animation-delay: 295ms;
+  -webkit-animation-delay: 910ms;
+          animation-delay: 910ms;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  -webkit-animation-delay: 1275ms;
-          animation-delay: 1275ms;
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-fill-mode: backwards;
@@ -176,9 +167,8 @@
   width: 32px;
   height: 32px;
   overflow: hidden;
-  animation: appearheart 1000ms ease-in-out;
-  -moz-animation: appearheart 1000ms ease-in-out;
   -webkit-animation: appearheart 1000ms ease-in-out;
+          animation: appearheart 1000ms ease-in-out;
 }
 @media (min-width: 992px) {
   .menus__titles:hover img {
@@ -320,11 +310,9 @@
 
 @keyframes appearheart {
   0% {
-    transform: width 0%;
     opacity: 0;
   }
   100% {
-    transform: width 100%;
     opacity: 1;
   }
 }
@@ -555,7 +543,7 @@
 .card__like__byline {
   width: 166px;
   height: 42px;
-  padding-top: -20px;
+  padding-bottom: 20px;
   line-height: 1.3;
   letter-spacing: -0.5px;
 }
@@ -606,9 +594,6 @@
     font-size: 28px;
     margin-right: 12px;
   }
-}
-.card__like.heart img {
-  width: 0%;
 }
 
 .logo {
@@ -855,7 +840,7 @@
 }
 
 .logo-arrow {
-  display: flexbox;
+  display: block;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -1018,8 +1003,6 @@
   margin-right: 0px;
   width: 30%;
   transition: width 600ms ease-in-out;
-  -webkit-transition: width 600ms ease-in-out;
-  -o-transition: width 600ms ease-in-out;
 }
 @media (min-width: 992px) {
   .dish:hover > .dish__booking {
@@ -1042,8 +1025,6 @@
   overflow: hidden;
   transform: rotate(360deg);
   transition: transform 600ms ease-in-out;
-  -webkit-transition: rotate(360deg) 600ms ease-in-out;
-  -o-transition: rotate(360deg) 600ms ease-in-out;
 }
 @media (min-width: 390px) {
   .dish:hover > .dish__booking {
@@ -1189,14 +1170,10 @@
   padding: 14px 50px;
   border: none;
   margin-top: 30px;
-  text-decoration: none;
   color: #FFFFFF;
   font-size: 0.85em;
   font-weight: 500;
   box-shadow: 5px 5px 5px #D4D4D4;
-}
-.btn a {
-  color: #FFFFFF;
 }
 .btn--rounded {
   border-radius: 25px;
@@ -1219,51 +1196,74 @@
   }
 }
 
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 @-webkit-keyframes scale {
   0% {
-    transform: scale(0%);
+    transform: scale(0);
     opacity: 1;
     z-index: 2;
-    -ms-transform: scale(0%);
-    -moz-transform: scale(0%);
-    -webkit-transform: scale(0%);
   }
   99% {
-    transform: scale(99%);
+    transform: scale(0.99);
     opacity: 1;
   }
   100% {
-    transform: scale(100%);
+    transform: scale(1);
     opacity: 0;
-    -ms-transform: scale(100%);
-    -moz-transform: scale(100%);
-    -webkit-transform: scale(100%);
     z-index: 1;
   }
 }
 
 @keyframes scale {
   0% {
-    transform: scale(0%);
+    transform: scale(0);
     opacity: 1;
     z-index: 2;
-    -ms-transform: scale(0%);
-    -moz-transform: scale(0%);
-    -webkit-transform: scale(0%);
   }
   99% {
-    transform: scale(99%);
+    transform: scale(0.99);
     opacity: 1;
   }
   100% {
-    transform: scale(100%);
+    transform: scale(1);
     opacity: 0;
-    -ms-transform: scale(100%);
-    -moz-transform: scale(100%);
-    -webkit-transform: scale(100%);
     z-index: 1;
   }
 }
+@-webkit-keyframes opac {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 0vw;
+    height: 0vh;
+  }
+}
+@keyframes opac {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+  100% {
+    width: 0vw;
+    height: 0vh;
+  }
+}
+.conteneur {
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  -webkit-animation: opac 3000ms ease-in-out forwards;
+          animation: opac 3000ms ease-in-out forwards;
+}
+
 #spinner {
   position: absolute;
   margin: 0 auto;
@@ -1275,11 +1275,8 @@
   width: 100%;
   height: 100%;
   min-height: 160vh;
-  transform: scale(100%);
+  transform: scale(1);
   opacity: 0;
-  -ms-transform: scale(100%);
-  -moz-transform: scale(100%);
-  -webkit-transform: scale(100%);
   -webkit-animation: scale 3000ms ease-in-out;
           animation: scale 3000ms ease-in-out;
 }
@@ -1331,31 +1328,19 @@
 
 @-webkit-keyframes rotate {
   0% {
-    transform: rotateY(45deg) scale(0%);
-    -ms-transform: rotateY(45deg) scale(0%);
-    -moz-transform: rotateY(45deg) scale(0%);
-    -webkit-transform: rotateY(45deg) scale(0%);
+    transform: rotateY(45deg) scale(0);
   }
   100% {
-    transform: rotateY(405deg) scale(100%);
-    -ms-transform: rotateY(405deg) scale(100%);
-    -moz-transform: rotateY(405deg) scale(100%);
-    -webkit-transform: rotateY(405deg) scale(100%);
+    transform: rotateY(405deg) scale(1);
   }
 }
 
 @keyframes rotate {
   0% {
-    transform: rotateY(45deg) scale(0%);
-    -ms-transform: rotateY(45deg) scale(0%);
-    -moz-transform: rotateY(45deg) scale(0%);
-    -webkit-transform: rotateY(45deg) scale(0%);
+    transform: rotateY(45deg) scale(0);
   }
   100% {
-    transform: rotateY(405deg) scale(100%);
-    -ms-transform: rotateY(405deg) scale(100%);
-    -moz-transform: rotateY(405deg) scale(100%);
-    -webkit-transform: rotateY(405deg) scale(100%);
+    transform: rotateY(405deg) scale(1);
   }
 }
 .loader {
@@ -1367,7 +1352,7 @@
   width: 160px;
   height: 160px;
   position: relative;
-  transform: rotateY(45deg) scale(100%);
+  transform: rotateY(45deg) scale(1);
   transform-style: preserve-3d;
   -webkit-animation: rotate 3000ms linear;
           animation: rotate 3000ms linear;

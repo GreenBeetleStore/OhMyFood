@@ -7,7 +7,6 @@
         transform: scaleY(1.0) scaleX(1.0);
     }
 }
-
 .main-dishes{
     animation: ticks $menus-time backwards ease-in-out;   
     @for $i from 1 through $num-dish {

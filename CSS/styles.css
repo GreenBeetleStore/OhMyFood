@@ -44,17 +44,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 155ms;
+  animation-delay: 1415ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1420ms;
+  animation-delay: 1630ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 885ms;
+  animation-delay: 1560ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }

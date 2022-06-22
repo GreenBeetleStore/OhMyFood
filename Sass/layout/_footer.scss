@@ -32,7 +32,7 @@
     }
     & h2{
         font-family: 'Shrikhand';
-        font-size: 1em;
+        font-size: 1.1em;
         font-weight: lighter;
         letter-spacing: 0.65px;
         color: $basecolor;
@@ -40,8 +40,20 @@
         max-width: 600px;
         text-align: left;
         align-self: flex-start;
+        @media (min-width: 640px){
+            font-size: 1.1em;
+        }
+        @media (min-width: 768px){
+            font-size: 1.2em;
+        }
         @media (min-width: 992px){
-            font-size: 1.15em;
+            font-size: 1.3em;
+        }
+        @media (min-width: 1240px){
+            font-size: 1.4em;
+        }
+        @media (min-width: 1440px){
+            font-size: 1.5em;
         }
     }
     & ul.feedback{
@@ -55,6 +67,21 @@
             color: $basecolor;
             line-height: 1.7;                
             letter-spacing: 0.1px;
+            @media (min-width: 640px){
+                font-size: 0.95em;
+            }
+            @media (min-width: 768px){
+                font-size: 1em;
+            }
+            @media (min-width: 992px){
+                font-size: 1.05em;
+            }
+            @media (min-width: 1240px){
+                font-size: 1.15em;
+            }
+            @media (min-width: 1440px){
+                font-size: 1.25em;
+            }
             i{
                 width: 25px;
                 font-size: 1em;
@@ -64,10 +91,13 @@
                 }
             }
             @media (min-width: 992px){
-                font-size: 0.9em;
+                font-size: 1em;
             }
             @media (min-width: 1240px){
-                font-size: 1em;
+                font-size: 1.12em;
+            }
+            @media (min-width: 1440px){
+                font-size: 1.25em;
             }
         }
     }

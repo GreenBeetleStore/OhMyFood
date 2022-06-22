@@ -27,32 +27,50 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            margin-left: 12px;
             @media (min-width: 640px){
                 font-size: 1.08em;
+            }@media (min-width: 768px){
+                font-size: 1.1em;
             }
             @media (min-width: 992px){
-                font-size: 1.15em;
+                font-size: 1.2em;
                 margin-left: 18px;
             }
             @media (min-width: 1240px){
-                font-size: 1.10em;
+                font-size: 1.12em;
+            }
+            @media (min-width: 1440px){
+                font-size: 1.25em;
             }
         }
         p{
-            font-size: 0.80em;
+            font-size: 0.90em;
             font-weight: 400;
             letter-spacing: -0.03em;
             padding: 0px 0px 10px 8px;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            margin-left: 5px;
+            @media (min-width: 640px){
+                font-size: 1em;
+            }
+            @media (min-width: 768px){
+                font-size: 1.05em;
+            }
             @media (min-width: 992px){
-                font-size: 0.9em;
+                font-size: 1.1em;
                 margin-left: 12px;
             }
             @media (min-width: 1240px){
-                font-size: 1em;
-                margin-left: 12px;
+                font-size: 1.05em;
+            }
+            @media (min-width: 1340px){
+                font-size: 1.12em;
+            }
+            @media (min-width: 1440px){
+                font-size: 1.2em;
             }
         }
     }

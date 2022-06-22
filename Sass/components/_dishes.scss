@@ -1,11 +1,11 @@
 // Nom du plat et garniture
 .main-dishes{
     &__subtitles{
-        font-size: 0.9em; 
+        font-size: 1em; 
         font-weight: 400;
         padding: 24px 0 6px 1.6%;
         @media (min-width: 992px){
-            font-size: 1.05em;
+            font-size: 1.1em;
         }
     }
     &__underline{

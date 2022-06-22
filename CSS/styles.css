@@ -1,37 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 @keyframes appearheart {
   0% {
-    opacity: 0;
+    opacity: 0.3;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.5);
   }
   100% {
-    opacity: 1%;
+    opacity: 1;
+    transform: scale(1.1);
   }
 }
-.card__like :hover i {
-  display: none;
-}
-.card__like :hover img {
-  display: flex;
-  width: 28px;
-  height: 28px;
-  width: 100%;
-  overflow: hidden;
-  animation: appearheart 1000ms ease-in-out;
-}
-@media (min-width: 992px) {
-  .card__like :hover img {
-    width: 30px;
-    height: 30px;
-  }
-}
-@media (min-width: 1240px) {
-  .card__like :hover img {
-    width: 32px;
-    height: 32px;
-    margin-right: 12px;
-  }
-}
-
 @keyframes ticks {
   0% {
     transform: scaleY(0) scaleX(0);
@@ -44,17 +25,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 830ms;
+  animation-delay: 1130ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1060ms;
+  animation-delay: 820ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1875ms;
+  animation-delay: 975ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -109,7 +90,7 @@
 .menus__titles h1 {
   width: auto;
   font-family: "Shrikhand";
-  font-size: 1.45em;
+  font-size: 1.5em;
   font-weight: 500;
   padding: 6px 1.6%;
 }
@@ -131,18 +112,18 @@
 .menus__titles img {
   display: none;
 }
-.menus__titles:hover i {
+.menus .heart:hover i {
   display: none;
 }
-.menus__titles:hover img {
+.menus .heart:hover img {
   display: flex;
   width: 32px;
   height: 32px;
   overflow: hidden;
-  animation: appearheart 1000ms ease-in-out;
+  animation: appearheart 1000ms linear;
 }
 @media (min-width: 992px) {
-  .menus__titles:hover img {
+  .menus .heart:hover img {
     width: 36px;
     height: 36px;
   }
@@ -279,14 +260,6 @@
   }
 }
 
-@keyframes appearheart {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .headers {
   font-size: 1.2rem;
   font-weight: 700;
@@ -310,9 +283,17 @@
     font-size: 1.4em;
   }
 }
+.operative p {
+  font-size: 1.1em;
+}
+@media (min-width: 640px) {
+  .operative p {
+    font-size: 1.2em;
+  }
+}
 @media (min-width: 992px) {
   .operative p {
-    font-size: 1.25em;
+    font-size: 1.3em;
   }
 }
 
@@ -509,8 +490,31 @@
 .card__like img {
   display: none;
 }
+.card__like :hover i {
+  display: none;
+}
+.card__like :hover img {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  animation: appearheart 1000ms linear;
+}
+@media (min-width: 992px) {
+  .card__like :hover img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 1240px) {
+  .card__like :hover img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+}
 .card__like__byline {
-  width: 166px;
+  width: 200px;
   height: 42px;
   padding-bottom: 20px;
   line-height: 1.3;
@@ -522,31 +526,31 @@
   }
 }
 .card__like h3 {
-  font-size: 1em;
-  font-weight: 700;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 @media (min-width: 992px) {
   .card__like h3 {
-    font-size: 1.05em;
+    font-size: 1.2em;
   }
 }
 @media (min-width: 1240px) {
   .card__like h3 {
-    font-size: 1.15em;
+    font-size: 1.3em;
     margin-left: 14px;
   }
 }
 .card__like p {
-  font-size: 0.93em;
+  font-size: 1em;
 }
 @media (min-width: 992px) {
   .card__like p {
-    font-size: 0.99em;
+    font-size: 1.1em;
   }
 }
 @media (min-width: 1240px) {
   .card__like p {
-    font-size: 1.08em;
+    font-size: 1.2em;
     margin-left: 14px;
   }
 }
@@ -612,7 +616,7 @@
   max-width: 100%;
   background-color: #EAEAEA;
   border: none;
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-weight: 500;
 }
 @media (min-width: 992px) {
@@ -634,8 +638,8 @@
 }
 .intro h1 {
   width: 72%;
-  font-size: 1.25em;
-  font-weight: 800;
+  font-size: 1.35em;
+  font-weight: 700;
   line-height: 115%;
   margin-bottom: 12px;
 }
@@ -645,7 +649,7 @@
   }
 }
 .intro p {
-  font-size: 0.85em;
+  font-size: 1em;
   line-height: 120%;
 }
 @media (min-width: 992px) {
@@ -851,13 +855,13 @@
 }
 
 .main-dishes__subtitles {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 400;
   padding: 24px 0 6px 1.6%;
 }
 @media (min-width: 992px) {
   .main-dishes__subtitles {
-    font-size: 1.05em;
+    font-size: 1.1em;
   }
 }
 .main-dishes__underline {
@@ -878,7 +882,7 @@
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
-  max-width: 480px;
+  max-width: 485px;
   height: 68px;
   border-radius: 14px;
   background-color: #FFFFFF;
@@ -890,33 +894,42 @@
     height: 72px;
   }
 }
+@media (min-width: 1240px) {
+  .dish {
+    width: 105%;
+  }
+}
 .dish__name {
-  width: 380px;
+  width: 350px;
+  min-width: 280px;
 }
 .dish__name h3 {
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: 500;
-  letter-spacing: -0.85px;
   margin: 16px 0px 0px 8px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-@media (min-width: 992px) {
+@media (min-width: 640px) {
   .dish__name h3 {
-    font-size: 1em;
-    margin-left: 18px;
-    letter-spacing: -1.2px;
+    font-size: 1.08em;
   }
 }
-@media (min-width: 1340px) {
+@media (min-width: 992px) {
   .dish__name h3 {
-    font-size: 1.1em;
+    font-size: 1.15em;
+    margin-left: 18px;
+  }
+}
+@media (min-width: 1240px) {
+  .dish__name h3 {
+    font-size: 1.2em;
   }
 }
 .dish__name p {
-  font-size: 0.78em;
-  font-weight: 300;
+  font-size: 0.83em;
+  font-weight: 400;
   letter-spacing: -0.03em;
   padding: 0px 0px 10px 8px;
   white-space: nowrap;
@@ -925,30 +938,59 @@
 }
 @media (min-width: 992px) {
   .dish__name p {
-    font-size: 0.85em;
-    margin-left: 12px;
-    letter-spacing: -1.1px;
-  }
-}
-@media (min-width: 1340px) {
-  .dish__name p {
     font-size: 0.9em;
     margin-left: 12px;
-    letter-spacing: -0.7px;
+  }
+}
+@media (min-width: 1240px) {
+  .dish__name p {
+    font-size: 1em;
+    margin-left: 12px;
   }
 }
 .dish__price {
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: 500;
   letter-spacing: -0.5px;
   position: relative;
-  right: 0px;
+  right: 8px;
   bottom: 8px;
   margin: 0 24px;
 }
+@media (min-width: 480px) {
+  .dish__price {
+    right: 0px;
+  }
+}
+@media (min-width: 520px) {
+  .dish__price {
+    right: -10px;
+  }
+}
+@media (min-width: 640px) {
+  .dish__price {
+    right: 10px;
+  }
+}
+@media (min-width: 680px) {
+  .dish__price {
+    right: 5px;
+  }
+}
+@media (min-width: 720px) {
+  .dish__price {
+    right: -2px;
+  }
+}
+@media (min-width: 740px) {
+  .dish__price {
+    right: -5px;
+  }
+}
 @media (min-width: 992px) {
   .dish__price {
-    font-size: 1em;
+    font-size: 1.1em;
+    right: -10px;
     bottom: 12px;
   }
 }

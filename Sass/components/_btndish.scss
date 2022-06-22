@@ -1,10 +1,10 @@
 // Bouton pour réserver des plats
-.dish{
+.dish{ 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    max-width: 480px;
+    max-width: 485px;
     height: 68px;
     border-radius: 14px;
     background-color: $basecolor;
@@ -12,56 +12,78 @@
     @include box-shadow ($shadow);    
     @media (min-width: 992px){
         height: 72px;
-    }    
+    }
+    @media (min-width: 1240px){
+        width: 105%;
+    }
     &__name{ 
-        width: 380px;
+        width: 350px;
+        min-width: 280px;
         h3{
-            font-size: 0.95em;
+            font-size: 1em;
             font-weight: 500;
-            letter-spacing: -0.85px;
             margin: 16px 0px 0px 8px;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            @media (min-width: 992px){
-                font-size: 1em;
-                margin-left: 18px;
-                letter-spacing: -1.2px;
+            @media (min-width: 640px){
+                font-size: 1.08em;
             }
-            @media (min-width: 1340px){
-                font-size: 1.1em;
+            @media (min-width: 992px){
+                font-size: 1.15em;
+                margin-left: 18px;
+            }
+            @media (min-width: 1240px){
+                font-size: 1.2em;
             }
         }
         p{
-            font-size: 0.78em;
-            font-weight: 300;
+            font-size: 0.83em;
+            font-weight: 400;
             letter-spacing: -0.03em;
             padding: 0px 0px 10px 8px;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
             @media (min-width: 992px){
-                font-size: 0.85em;
-                margin-left: 12px;
-                letter-spacing: -1.1px;
-            }
-            @media (min-width: 1340px){
                 font-size: 0.9em;
                 margin-left: 12px;
-                letter-spacing: -0.7px;
+            }
+            @media (min-width: 1240px){
+                font-size: 1em;
+                margin-left: 12px;
             }
         }
     }
-    &__price{
-        font-size: 0.95em;
+    &__price{ 
+        font-size: 1em;
         font-weight: 500;
         letter-spacing: -0.5px;
         position: relative;
-        right: 0px;
+        right: 8px;
         bottom: 8px;
         margin: 0 24px;
+        @media (min-width:480px){
+            right: 0px;
+        }
+        @media (min-width:520px){
+            right: -10px;
+        }
+        @media (min-width:640px){
+            right: 10px;
+        }
+        @media (min-width:680px){
+            right: 5px;
+        }
+        @media (min-width:720px){
+            right: -2px;
+        }
+        @media (min-width:740px){
+            right: -5px;
+        }
         @media (min-width: 992px){
-            font-size: 1em;
+            font-size: 1.1em;
+            right: -10px;
             bottom: 12px;
         }
     }

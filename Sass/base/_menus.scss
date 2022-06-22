@@ -18,7 +18,7 @@
         & h1{
             width: auto;
             font-family: 'Shrikhand';
-            font-size: 1.45em;
+            font-size: 1.5em;
             font-weight: 500;
             padding: 6px 1.6%;
             @media (min-width: 992px){
@@ -34,23 +34,25 @@
         }
         & img{
             display: none;
-        }
+        }  
+    }
+    .heart{
         &:hover {
             & i{
                 display: none;
             }
-            img{
+            & img{ 
                 display: flex;
                 width: 32px;
                 height: 32px;
                 overflow: hidden;
-                animation: appearheart 1000ms ease-in-out;
+                animation: appearheart 1000ms linear;
                 @media (min-width: 992px){
                     width: 36px;
                     height: 36px;
                 }
             }
-        }   
+        } 
     }
     // Media Queries Adaptation of header image and footer position
     @media (min-width: 430px) {
@@ -145,13 +147,5 @@
                 height: auto;
             }
         }
-    }
-}
-@keyframes appearheart{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
     }
 }

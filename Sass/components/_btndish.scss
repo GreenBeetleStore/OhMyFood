@@ -17,8 +17,8 @@
         width: 105%;
     }
     &__name{ 
-        width: 350px;
-        min-width: 280px;
+        width: 340px;
+        min-width: 60%;
         h3{
             font-size: 1em;
             font-weight: 500;
@@ -38,7 +38,7 @@
             }
         }
         p{
-            font-size: 0.83em;
+            font-size: 0.80em;
             font-weight: 400;
             letter-spacing: -0.03em;
             padding: 0px 0px 10px 8px;
@@ -56,11 +56,11 @@
         }
     }
     &__price{ 
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: 500;
         letter-spacing: -0.5px;
         position: relative;
-        right: 8px;
+        right: 4px;
         bottom: 8px;
         margin: 0 24px;
         @media (min-width:480px){
@@ -113,7 +113,6 @@
                 width: 22px;
                 height: 22px;
                 border-radius: 11px;
-                padding: 0; /* 6px 0 0 4px; */
                 font-size: 0.9em;
                 color: $tertiarycolor;
                 background-color: $basecolor;
@@ -161,6 +160,15 @@
                 width: 17%;
             }
             @media (min-width: 530px){
+                width: 16%;
+            }
+            @media (min-width: 640px){
+                width: 22%;
+            }
+            @media (min-width: 680px){
+                width: 18%;
+            }
+            @media (min-width: 720px){
                 width: 16%;
             }
             @media (min-width: 1240px){

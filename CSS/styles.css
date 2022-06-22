@@ -25,17 +25,17 @@
   animation: ticks 750ms backwards ease-in-out;
 }
 .main-dishes--1 {
-  animation-delay: 1130ms;
+  animation-delay: 1385ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 820ms;
+  animation-delay: 1150ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 975ms;
+  animation-delay: 1470ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -900,8 +900,8 @@
   }
 }
 .dish__name {
-  width: 350px;
-  min-width: 280px;
+  width: 340px;
+  min-width: 60%;
 }
 .dish__name h3 {
   font-size: 1em;
@@ -928,7 +928,7 @@
   }
 }
 .dish__name p {
-  font-size: 0.83em;
+  font-size: 0.8em;
   font-weight: 400;
   letter-spacing: -0.03em;
   padding: 0px 0px 10px 8px;
@@ -949,11 +949,11 @@
   }
 }
 .dish__price {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 500;
   letter-spacing: -0.5px;
   position: relative;
-  right: 8px;
+  right: 4px;
   bottom: 8px;
   margin: 0 24px;
 }
@@ -1026,8 +1026,6 @@
   width: 22px;
   height: 22px;
   border-radius: 11px;
-  padding: 0;
-  /* 6px 0 0 4px; */
   font-size: 0.9em;
   color: #99E2D0;
   background-color: #FFFFFF;
@@ -1096,6 +1094,21 @@
   }
 }
 @media (min-width: 530px) {
+  .dish:hover > .dish__booking {
+    width: 16%;
+  }
+}
+@media (min-width: 640px) {
+  .dish:hover > .dish__booking {
+    width: 22%;
+  }
+}
+@media (min-width: 680px) {
+  .dish:hover > .dish__booking {
+    width: 18%;
+  }
+}
+@media (min-width: 720px) {
   .dish:hover > .dish__booking {
     width: 16%;
   }

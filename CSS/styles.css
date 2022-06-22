@@ -30,12 +30,12 @@
   animation-fill-mode: backwards;
 }
 .main-dishes--2 {
-  animation-delay: 1150ms;
+  animation-delay: 310ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
 .main-dishes--3 {
-  animation-delay: 1470ms;
+  animation-delay: 570ms;
   animation-direction: alternate;
   animation-fill-mode: backwards;
 }
@@ -891,12 +891,13 @@
 }
 @media (min-width: 992px) {
   .dish {
-    height: 72px;
+    height: 75px;
   }
 }
 @media (min-width: 1240px) {
   .dish {
     width: 105%;
+    height: 80px;
   }
 }
 .dish__name {
@@ -924,7 +925,7 @@
 }
 @media (min-width: 1240px) {
   .dish__name h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 .dish__name p {
@@ -1015,7 +1016,12 @@
 }
 @media (min-width: 992px) {
   .dish:hover > .dish__booking {
-    height: 72px;
+    height: 76px;
+  }
+}
+@media (min-width: 1240px) {
+  .dish:hover > .dish__booking {
+    height: 81px;
   }
 }
 .dish:hover > .dish__booking > .check, .dish:hover > .dish__booking i {

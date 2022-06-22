@@ -11,10 +11,11 @@
     margin: 12px auto 12px auto;
     @include box-shadow ($shadow);    
     @media (min-width: 992px){
-        height: 72px;
+        height: 75px;
     }
     @media (min-width: 1240px){
         width: 105%;
+        height: 80px;
     }
     &__name{ 
         width: 340px;
@@ -34,7 +35,7 @@
                 margin-left: 18px;
             }
             @media (min-width: 1240px){
-                font-size: 1.2em;
+                font-size: 1.10em;
             }
         }
         p{
@@ -103,7 +104,10 @@
             background-color: $tertiarycolor;
             margin-right: 0px;
             @media (min-width: 992px){
-                height: 72px;
+                height: 76px;
+            }
+            @media (min-width: 1240px){
+                height: 81px;
             } 
             & > .check, i{
                 display: flex;

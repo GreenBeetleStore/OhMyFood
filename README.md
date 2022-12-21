@@ -21,18 +21,22 @@ L’équipe se compose de :
 · Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;
 
 · Anissa, commerciale chargée de démarcher les restaurants ;
-        · et vous, chargé du développement du site.
+
+· et vous, chargé du développement du site.
+
+-----
         
-Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
+- Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
 
 Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
 
 Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. 
-Voir ci-dessous le brief créatif que vous établissez avec le CTO, Paul.
+
+Voir plus ci-dessous le brief créatif que vous établissez avec le CTO, Paul.
 
 De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie les maquettes du site.
 
-
+<img src="./images/maquette.png" alt="maquete mobile">
 
  
 

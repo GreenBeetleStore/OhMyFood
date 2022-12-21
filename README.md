@@ -68,23 +68,34 @@ Vous vous lancez dans cette nouvelle aventure !
         
 ### Enjeux
 
-Problématique 4
-Fonctionnement 4
-Budget 4
-Planning 4
-Technologies 5
-Compatibilité 5
-Livrables attendus 5
-Contenu des pages 5
-Effets graphiques et animations
+        · Problématique
+        
+### Fonctionnement
+
+        · Budget
+        
+        · Planning
+        
+        · Technologies
+        
+        · Compatibilité
+        
+### Livrables attendus
+
+        · Contenu des pages
+        
+        · Effets graphiques et animations
 
 
+## Marque
 
+### Identité
 
 Ohmyfood! est une entreprise de commande de repas en ligne. 
-Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les
-restaurants car leur menu est préparé à l’avance. 
-Plus de perte de temps à consulter la carte!
+
+Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants car leur menu est préparé à l’avance. 
+
+**Plus de perte de temps à consulter la carte!
 
 Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques.
 

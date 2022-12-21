@@ -38,15 +38,45 @@ De retour à votre bureau, vous trouvez un mail de Fanny qui vous envoie les maq
 
 <img src="./images/maquette.png" alt="maquete mobile">
 
- 
-
 Pour ce projet, vous versionnez tout votre code sur Github avec des commits réguliers pour suivre son avancement et publier le site en ligne plus facilement.
 
-Vous avez désormais tous les éléments pour construire ce site mobile. Vous vous lancez dans cette nouvelle aventure !
+Vous avez désormais tous les éléments pour construire ce site mobile. 
 
+Vous vous lancez dans cette nouvelle aventure !
 
+=======================================================================
 
+# Brief créatif
 
+## Création du site Ohmyfood! Paris
+
+## Sommaire
+
+### Marque 
+
+        · Identité
+        
+        · Proposition
+        
+        · Positionnement
+        
+        · Concurrence
+        
+        · Cible
+        
+        · Identité graphique
+        
+### Enjeux
+
+Problématique 4
+Fonctionnement 4
+Budget 4
+Planning 4
+Technologies 5
+Compatibilité 5
+Livrables attendus 5
+Contenu des pages 5
+Effets graphiques et animations
 
 
 

@@ -1,8 +1,10 @@
-# OhMyFood
+# <img src="./images/ohmyfood-color.png" alt="logo OhMyFood">
 
-https://greenbeetlestore.github.io/OhMyFood/
+### Visitez le projet réalisé <a href="https://greenbeetlestore.github.io/OhMyFood/">ici : https://greenbeetlestore.github.io/OhMyFood/</a>
 
-Dynamisez une page web avec des animations CSS. P3 OhMyFood
+# Dynamisez une page web avec des animations CSS. P3 OhMyFood
+
+<img src="./images/PageOhMyFood.png" alt="logo OhMyFood">
 
 Ohmyfood! est une entreprise de commande de repas en ligne. 
 Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les

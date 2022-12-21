@@ -1,4 +1,4 @@
-# <img src="./images/ohmyfood-color.png" alt="logo OhMyFood">
+<img src="./images/ohmyfood-color.png" alt="logo OhMyFood">
 
 ### Visitez le projet réalisé <a href="https://greenbeetlestore.github.io/OhMyFood/">ici : https://greenbeetlestore.github.io/OhMyFood/</a>
 
